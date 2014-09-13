@@ -1,0 +1,2198 @@
+/* All fonts used in project with crossbrowser support */
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../font/proximanova-regular-webfont.eot');
+    src: url('../font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-regular-webfont.woff') format('woff'),
+         url('../font/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../font/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../font/proximanova-light-webfont.eot');
+    src: url('../font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-light-webfont.woff') format('woff'),
+         url('../font/proximanova-light-webfont.ttf') format('truetype'),
+         url('../font/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../font/proximanova-bold-webfont.eot');
+    src: url('../font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-bold-webfont.woff') format('woff'),
+         url('../font/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../font/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*===================================
+=            Main styles            =
+===================================*/
+html, body {
+    overflow-x: hidden;
+    font-family: 'proxima_novalight';
+}
+
+.transition,
+.transition > span {
+    opacity: 0;
+}
+
+.transitionFast {
+    -webkit-transition: all 0.26s ease-out;
+    -moz-transition: all 0.26s ease-out;
+    -ms-transition: all 0.26s ease-out;
+    -o-transition: all 0.26s ease-out;
+    transition: all 0.26s ease-out;
+}
+
+.transitionSlow {
+    -webkit-transition: all 1.1s ease-out;
+    -moz-transition: all 1.1s ease-out;
+    -ms-transition: all 1.1s ease-out;
+    -o-transition: all 1.1s ease-out;
+    transition: all 1.1s ease-out;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: 0;
+    border-bottom: 4px solid #ae0000;
+    border-color: #ae0000;/* ie9 fix */
+    text-align: left;
+    text-shadow: 0 1px 2px #990000;
+    font-weight: 100;
+    letter-spacing: 0.8px;
+    outline: 0;
+    color: #fff;
+    background: #cd0606;
+    background-image: url(../img/btnGrad.png);
+    -webkit-transition: background-image 500ms ease-out;
+    -moz-transition: background-image 500ms ease-out;
+    -o-transition: background-image 500ms ease-out;
+    transition: background-image 500ms ease-out;
+}
+
+button:hover {
+    background-image: url(../img/btnGradHover.png);
+}
+
+.highlight {
+    background: rgb(248, 240, 141);
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/*-----  End of Main styles  ------*/
+
+
+
+
+/*============================
+=            Head            =
+============================*/
+.topHead {
+    background: #F0F0F0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.headLine {
+    z-index: 7777;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #000;
+}
+
+.headLine * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.headLine .headLine-logo {
+    display: inline-block;
+    float: left;
+    margin-top: 12px;
+}
+
+.headLine .headLine-ctrl {
+    float: right;
+}
+
+.headLine .headLine-ctrl a {
+    display: block;
+    width: 101px;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.headLine .headLine-ctrl a:hover {
+    background: #AD0000;
+    background-image: url(../img/btnGradHover.png);
+}
+
+.headLine .headLine-ctrl .blogEnter {
+    margin-right: 7px;
+}
+
+.headLine .headLine-ctrl .blogEnter span {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    padding-right: 24px;
+    background-image: url(../img/ico/blog.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.headLine .headLine-ctrl .loginEnter {
+    border: 1px solid #4d4d4d;
+    border-bottom: 2px solid #4d4d4d;
+}
+
+.headLine .headLine-ctrl .loginEnter span {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    padding-right: 24px;
+    background-image: url(../img/ico/login.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+/* headbar incl. login/reg/market */
+.headBar {
+    height: 540px;
+    margin: 80px auto 0;
+    background-image:  url(../img/headBar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.headBar .onLoad header,
+.headBar .onLoad .contacts,
+.headBar .onLoad img,
+.headBar .social header,
+.headBar .social .links,
+.headBar .social img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+/**
+* Internal head part with different state blocks
+**/
+
+/* page loaded first time - registration block + shared styles */
+
+.headBar .onLoad,
+.headBar .social {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.onLoad .onLoad-girl {
+    display: none; /*  mobile first :)  */
+    position: absolute;
+    bottom: 0;
+}
+
+.onLoad header {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    left: 0;
+}
+
+.onLoad h1,
+.onLoad h2 {
+    margin: 0 0 2px 0;
+    text-shadow: 1px 1px 1px #3B3B3B;
+    color: #fff;
+}
+
+.onLoad h1 {
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'proxima_nova_rgregular';
+}
+
+.onLoad h2 {
+    position: absolute;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.onLoad .contacts {
+    position: absolute;
+    left: 440px;
+}
+
+.onLoad .contacts a {
+    display: block;
+    float: left;
+    clear: both;
+    position: relative;
+    top: 150px;
+    padding: 6px 10px 3px 10px;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.onLoad .contacts a:hover {
+    background: #AD0000;  
+    background-image: url(../img/btnGradHover.png);
+    border-radius: 4px;
+}
+
+.onLoad .contacts a > span {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 1px;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    background-image: url(../img/ico/contacts.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.onLoad-web span {
+    background-position: 0 -1px;
+}
+
+.onLoad-phn span {
+    background-position: 0 -41px;
+}
+
+.onLoad-eml span {
+    background-position: 0 -84px;
+}
+
+.onLoad-cnt span {
+    background-position: 0 -125px;
+}
+
+.onLoad-app span {
+    background-position: 0 -166px;
+}
+
+.onLoad form {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    opacity: 0;
+}
+
+.onLoad form * {
+    font-family: proxima_novalight;
+    font-size: 18px;
+}
+
+.onLoad form input {
+    width: 100%;
+    height: 25%;
+    padding-left: 20px;
+    border: 0;
+    border-bottom: 1px solid #eaeaea;
+    outline: 0;
+    border-radius: 0;
+}
+
+.onLoad form button {
+    height: 25%;
+    padding-left: 18px;;
+}
+
+.onLoad form button b {
+    font-family: proxima_nova_rgregular;
+    font-weight: bold;
+}
+
+.onLoad form button span {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/ico/submit.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* END of registration block */
+
+
+
+/* if registered - Social block is shown */
+
+.headBar .social {
+    color: #fff;
+    display: none;
+}
+
+.social .thankYou {
+    display: block; /*  mobile first :)  */
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.social header {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    left: 0;
+}
+
+.social h1,
+.social h2 {
+    margin: 0 0 2px 0;
+    text-shadow: 1px 1px 1px #3B3B3B;
+    color: #fff;
+}
+
+.social h1 {
+    font-size: 23px;
+    font-family: 'proxima_nova_rgregular';
+    font-weight: 100;
+}
+
+.social h2 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.social .links {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.social .links a {
+    background: rgba(255, 255, 255, 0.12);
+    display: inline-block;
+    border: 1px solid #B1ABA2;
+}
+.social .links a:hover {
+    background: #AD0000;
+    background: rgba(173, 0, 0, 0.43);
+    border: 1px dotted red;
+}
+.social .links a > span {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 1px;
+    width: 118px;
+    height: 118px;
+    background-image: url(../img/ico/social.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.social .links a.links-face span {
+    background-position: 0 0;
+}
+
+.social .links a.links-twit span {
+    background-position: -130px 0;
+}
+
+.social .links a.links-liIn span {
+    background-position: -260px 0;
+}
+
+.social .links a.links-thum span {
+    background-position: -390px 0;
+}
+
+/* END of social block */
+
+
+
+/*-----  End of Head  ------*/
+
+
+
+
+/*=================================================
+=            Header with popUp tollTip            =
+=================================================*/
+.headerTitle {
+    margin-bottom: 65px;
+}
+
+.headerTitle * {
+    text-align: center;
+}
+
+.headerTitle h1 {
+    display: inline-block;
+    margin-bottom: 0;
+    font-family: 'proxima_nova_rgbold';
+    font-size: 36px;
+    font-weight: 100;
+    color: #333333;
+}
+
+.headerTitle h2 {
+    margin-top: 4px;
+    font-size: 23px;
+    font-weight: 100;
+    color: #666666;
+}
+
+.headerTitle .servTip {
+    display: inline;
+    position: relative;
+    top: -10px;
+    text-decoration: none;
+}
+
+.headerTitle .servTip:hover:after {
+    content: attr(title);
+    z-index: 98;
+    position: absolute;
+    bottom: 40px;
+    left: -86px;
+    width: 200px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background: #333;
+    background: rgba(0,0,0,.8);
+}
+
+.headerTitle .servTip:hover:before {
+    content: "";
+    z-index: 99;
+    position: absolute;
+    bottom: 34px;
+    left: 30%;
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+}
+/*-----  End of Header with popUp tollTip  ------*/
+
+
+
+/*===============================================
+=            Login Link notification            =
+===============================================*/
+.loginLink {
+    margin-top: 17px;
+
+}
+
+.loginLink,
+.loginLink a {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+
+.loginLink a {
+    margin-left: 7px;
+    padding-left: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: url(../img/ico/loginLock.png);
+    background-repeat: no-repeat;
+}
+
+.loginLink a:hover {
+    color: #ae0000;
+}
+
+
+/*-----  End of Login Link notification  ------*/
+
+
+
+
+
+/*========================================
+=            Services section            =
+========================================*/
+.services {
+    margin-top: 26px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.servInfoWrap {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.servIcoWrap {
+    text-align: center;
+}
+
+.servInfo {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.servInfo .servInfo-ico {
+    display: inline-block;
+    position: relative;
+    width: 61px;
+    height: 61px;
+    margin: 0 auto;
+    background-image: url(../img/ico/serviceInfo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.servInfo .servInfo-ico.icoProfile {
+    background-position: 0 1px;
+}
+
+.servInfo .servInfo-ico.icoEmail {
+    background-position: -110px 1px;
+}
+
+.servInfo .servInfo-ico.icoWeb {
+    background-position: 0 -110px;
+}
+
+.servInfo .servInfo-ico.icoApp {
+    background-position: -110px -109px;
+}
+
+.servInfo .servInfo-ico.icoPhone {
+    background-position: 0 -219px;
+}
+
+.servInfo .servInfo-ico.icoCont {
+    background-position: -110px -219px;
+}
+
+.servInfo .servInfo-desc {
+    clear: both;
+    margin: 0 auto;
+    max-width: 360px;
+}
+
+.servInfo .servInfo-desc strong {
+    padding-right: 7px;
+    font-family: 'proxima_nova_rgbold';
+    font-size: 18px;
+    font-weight: 100;
+    color: #333333;
+}
+
+.servInfo .servInfo-desc b {
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 0;
+    color: #666666;
+}
+
+.servInfo .servInfo-desc p {
+    margin: 4px 0;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.services-alert {
+    margin: 28px 0 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #666666;
+}
+/*-----  End of Services section  ------*/
+
+
+
+
+/*====================================
+=            Slogan block            =
+====================================*/
+.slogan {
+    margin-top: 57px;
+}
+.slogan .servTip img {
+    position: relative;
+    right: 2px;/* centering img for arrowUp */
+}
+/*-----  End of Slogan block  ------*/
+
+
+
+
+/*==========================================
+=            Advertisment block            =
+==========================================*/
+.advert {
+  background: #333333;
+  overflow: hidden;
+}
+.advContainer h1 {
+  color: #fcf7f7;
+  text-align: center;
+}
+.advContainer {
+  margin: 30px auto 20px;
+  overflow: hidden;
+}
+.advContainer .btnWrap {
+    width: 238px;
+    margin: 0 auto;
+}
+.advContainer button {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'proxima_nova_rgregular';
+    font-weight: 800;
+}
+
+/*-----  End of Advertisment block  ------*/
+
+
+
+
+/*====================================
+=            Footer block            =
+====================================*/
+footer {
+    border-top: 1px solid #474747;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #000;
+}
+
+footer p {
+}
+
+footer nav {
+}
+
+footer nav a {
+    display: inline-block;
+    width: 100px;
+    margin: 0 auto 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-----  End of Footer block  ------*/
+
+/*=========================================
+=            Login PopUp block            =
+=========================================*/
+.popUp {
+    display: none;
+    z-index: 8888;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17,17,17,0.4);
+}
+
+.loginPopUp {
+    position: absolute;
+    top: 0;
+    top: 210px;
+    right: 0;
+    left: 0;
+    width: 640px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.loginPopUp-input {
+    margin-bottom: 8px;
+    overflow: auto;
+}
+
+.loginPopUp-input input {
+    display: block;
+    clear: both;
+    width: 284px;
+    margin: 0 auto;
+    padding: 30px 0 4px 0;
+    border: 0;
+    border-bottom: 1px solid #bfbfbf;
+    font-family: 'proxima_novalight';
+    font-size: 18px;
+    font-weight: 100;
+    outline: 0;
+    color: #999999;
+    border-radius: 0;
+}
+
+.loginPopUp-input .logEmail,
+.loginPopUp-input .logPass {
+    float: left;
+    width: 50%;
+}
+
+.loginPopUp-input .logEmail {
+}
+
+.loginPopUp-input .logPass {
+}
+
+.loginPopUp-face {
+    width: 100%;
+    text-align: center;
+    background: #e5e5e5;
+}
+
+.loginPopUp-input a {
+    display: inline-block;
+    float: right;
+    margin-bottom: 20px;
+    padding: 20px 20px 0 20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333333;
+    position: relative;
+}
+
+.loginPopUp-input a.passReset {
+    float: left;
+    background-image: url(../img/passResetLine.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+}
+
+.loginPopUp-input a.loginSubmit {
+    float: right;
+    background-image: url(../img/loginSubmitLine.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+    margin-right: 10px;
+}
+
+.loginPopUp-input a:hover {
+    color: #cc0000;
+}
+
+.loginPopUp-input a.loginSubmit span {
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    padding: 7px;
+    background: url(../img/ico/nextArr.png) no-repeat;
+    background-size: 6px;
+    right: 2px;
+}
+
+.loginPopUp-face {
+    padding: 10px 0;
+}
+
+.loginPopUp-face .faceConnect {
+    width: 360px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: 'proxima_nova_rgbold';
+    font-size: 17px;
+    font-weight: 800;
+    color: #333333;
+    cursor: pointer;
+}
+
+.loginPopUp-face .faceConnect:hover {
+    border-radius: 30px;
+    color: #4c66a4;
+    background: #F5F5F5;
+    -webkit-box-shadow: inset 1px 1px 6px 0 #3A3A3A;
+    box-shadow: inset 1px 1px 6px 0 #3A3A3A;
+}
+
+.loginPopUp-face .faceConnect img {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.loginPopUp-face .faceConnect span {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    margin-left: 4px;
+    padding: 10px;
+    background: url(../img/ico/nextArr.png) no-repeat;
+}
+
+/* recover password */
+
+.recoverPass {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.recoverPass .loginPopUp-input .logEmail {
+    width: 100%;
+    text-align: center;
+}
+
+.recoverPass .loginPopUp-input a {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: underline;
+    color: #AD0000;
+}
+
+/*-----  End of Login PopUp block  ------*/
+
+
+
+
+
+/**
+*
+* Responsive rules - mobile first
+*
+**/
+@media(max-width:459px) {
+    .headLine-logo img {
+        width: 80%;
+        margin-top: 8px;
+    }
+
+    /*footer*/
+
+    footer nav a {
+        display: block;
+        margin: 0 auto 12px;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+@media(min-width:460px) {
+    .headLine .headLine-ctrl a {
+        display: inline-block;
+    }
+
+    .headLine .headLine-ctrl {
+        margin-top: 21px;
+    }
+}
+
+@media(max-width:767px) {
+    .headerTitle .servTip {
+        display: none;
+    }
+
+    /*head*/
+
+    .headBar {
+        margin-bottom: 460px;
+    }
+
+    .headBar .onLoad {
+        overflow: visible;
+    }
+
+    .onLoad header h1 {
+        width: 280px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .onLoad header h2 {
+        top: 550px;
+        right: 0;
+        left: 0;
+        width: 240px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 26px;
+        color: #cd0606;
+    }
+
+    .onLoad header img {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .onLoad .contacts {
+        display: none;
+    }
+
+    .onLoad form {
+        position: relative;
+        bottom: -740px!important;
+        width: 290px;
+        margin: 0 auto;
+        outline: 1px solid #eaeaea;
+        opacity: 1!important; /* to prevent transition on mobile */
+    }
+
+    /* social */
+
+    .social header h1,
+    .social header h2 {
+        text-align: center;
+    }
+
+    .social header h2 {
+        font-size: 18px;
+    }
+
+    .social .thankYou {
+        display: none;
+    }
+
+    /* popUp */
+
+    .popUp {
+        display: none;
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(17,17,17,0.4);
+    }
+
+    .loginPopUp {
+        top: 10px;
+        width: 300px;
+        height: auto;
+    }
+
+    .loginPopUp-input {
+        margin-bottom: 8px;
+        overflow: auto;
+    }
+
+    .loginPopUp-input input {
+        width: 90%;
+    }
+
+    .loginPopUp-input .logEmail,
+    .loginPopUp-input .logPass {
+        float: none;
+        width: 90%;
+    }
+
+    .loginPopUp-input .logEmail {
+    }
+
+    .loginPopUp-input .logPass {
+    }
+
+    .loginPopUp-face {
+        width: 100%;
+        text-align: center;
+        background: #e5e5e5;
+    }
+
+    .loginPopUp-input a {
+        display: inline-block;
+        float: right;
+        position: relative;
+        margin-bottom: 20px;
+        padding: 20px 20px 0 20px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .loginPopUp-input a.passReset {
+    }
+
+    .loginPopUp-input a.loginSubmit {
+        float: left;
+    }
+
+    .loginPopUp-input a:hover {
+        color: #cc0000;
+    }
+
+    .loginPopUp-input a.loginSubmit span {
+        display: inline-block;
+        position: absolute;
+        top: 23px;
+        right: 2px;
+        padding: 7px;
+        background: url(../img/ico/nextArr.png) no-repeat;
+        background-size: 6px;
+    }
+
+    .loginPopUp-face {
+        padding: 10px 0;
+    }
+
+    .loginPopUp-face .faceConnect {
+        width: 300px;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 17px;
+    }
+
+    .loginPopUp-face .faceConnect:hover {
+        border-radius: 30px;
+        color: #4c66a4;
+        background: #F5F5F5;
+        -webkit-box-shadow: inset 1px 1px 6px 0 #3A3A3A;
+        box-shadow: inset 1px 1px 6px 0 #3A3A3A;
+    }
+
+    .loginPopUp-face .faceConnect img {
+        display: inline-block;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+
+    .loginPopUp-face .faceConnect span {
+        display: inline-block;
+        position: relative;
+        top: 7px;
+        margin-left: 4px;
+        padding: 10px;
+        background: url(../img/ico/nextArr.png) no-repeat;
+    }
+
+    /* recover password */
+
+    .recoverPass {
+        display: none;
+        margin-bottom: 20px;
+    }
+
+    .recoverPass .loginPopUp-input .logEmail {
+        width: 100%;
+        text-align: center;
+    }
+
+    .recoverPass .loginPopUp-input a {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) {
+    .onLoad form input:focus {
+        color: #990000;
+        background: #F8F8F8;
+    }
+
+    .onLoad form input:hover {
+        background: #F8F8F8;
+        cursor: default;
+    }
+
+    .onLoad header img {
+        display: none;
+    }
+
+    .headLine-ctrl {
+        margin-right: 60px;
+    }
+
+    .headLine .headLine-logo {
+        padding-left: 60px;
+    }
+
+    .onLoad header {
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .onLoad .contacts {
+        position: absolute;
+        left: 70px;
+    }
+
+    .onLoad form {
+        right: 70px;
+        bottom: 83px;
+    }
+
+    /* social */
+
+    .social header {
+        right: 130px;
+        left: auto;
+    }
+
+    .social .thankYou {
+        bottom: 60px;
+        left: 50px;
+    }
+
+    .social .links {
+        right: 40px;
+        bottom: 45px;
+        left: auto;
+    }
+
+    /* services */
+
+    .services {
+        background-image: url(../img/servBg.jpg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .servInfoWrap {
+        width: 470px;
+    }
+
+    .servInfo .servInfo-desc {
+        float: right;
+        clear: none;
+    }
+
+    .servIcoWrap {
+        float: left;
+    }
+
+    .servInfo .servInfo-desc p {
+        text-align: left;
+    }
+
+    /* advertisment */
+
+    .advContainer {
+        width: 740px;
+    }
+
+    /*footer*/
+
+    footer .container {
+        padding: 10px 0;
+    }
+
+    footer nav {
+        float: right;
+        margin-top: 14px;
+    }
+
+    footer p {
+        float: left;
+    }
+
+    footer nav a {
+        width: auto;
+        margin: 0 14px 0 0;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    footer nav a:last-child {
+        margin: 0;
+    }
+}
+
+@media(min-width:992px) {
+    .headLine .headLine-logo {
+        padding-left: 100px;
+    }
+
+    .headLine-ctrl {
+        margin-right: 104px;
+    }
+
+    .onLoad header {
+        position: absolute;
+        left: 340px;
+        width: 70%;
+    }
+
+    .onLoad .onLoad-girl {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+
+    .onLoad .contacts {
+        position: absolute;
+        left: 340px;
+    }
+
+    .onLoad form {
+        right: 40px;
+    }
+
+    /* social */
+
+    .social header {
+        top: 184px;
+        right: 87px;
+        left: auto;
+    }
+
+    .social .thankYou {
+        bottom: 149px;
+        left: 10px;
+    }
+
+    .social .links {
+        right: 43px;
+        bottom: 145px;
+        width: auto;
+    }
+
+    .social .links a {
+        margin-right: 6px;
+    }
+
+    /* services */
+
+    .servInfoWrap {
+        width: 940px;
+    }
+
+    /* advertisment */
+
+    .advContainer {
+        width: 920px;
+    }
+
+    .advert h1 {
+        float: left;
+        margin: 10px 0 20px;
+        text-align: left;
+        font-size: 35px;
+    }
+
+    .btnWrap {
+        float: right;
+    }
+
+    /* footer */
+
+    footer .container {
+        width: 920px;
+    }
+}
+
+@media(min-width:1200px) {
+    .headLine .headLine-logo {
+        padding-left: 130px;
+    }
+
+    .onLoad .onLoad-girl {
+        position: absolute;
+        bottom: 0;
+        left: 76px;
+    }
+
+    .onLoad header {
+        position: absolute;
+        left: 417px;
+        width: 100%;
+    }
+
+    .onLoad .contacts {
+        position: absolute;
+        left: 417px;
+    }
+
+    .onLoad form {
+        right: 117px;
+    }
+
+    /* social */
+
+    .social header {
+        top: 184px;
+        right: 140px;
+        left: auto;
+    }
+
+    .social .thankYou {
+        left: 158px;
+    }
+
+    .social .links {
+        right: 98px;
+        bottom: 150px;
+        width: auto;
+    }
+}
+
+/* end of responsive rules */
+
+
+
+
+/**
+*
+* Responsive grid
+*
+**/
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          
+  box-sizing: border-box;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11 {
+  float: left;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-xs-11 {
+  width: 91.66666666666666%;
+}
+
+.col-xs-10 {
+  width: 83.33333333333334%;
+}
+
+.col-xs-9 {
+  width: 75%;
+}
+
+.col-xs-8 {
+  width: 66.66666666666666%;
+}
+
+.col-xs-7 {
+  width: 58.333333333333336%;
+}
+
+.col-xs-6 {
+  width: 50%;
+}
+
+.col-xs-5 {
+  width: 41.66666666666667%;
+}
+
+.col-xs-4 {
+  width: 33.33333333333333%;
+}
+
+.col-xs-3 {
+  width: 25%;
+}
+
+.col-xs-2 {
+  width: 16.666666666666664%;
+}
+
+.col-xs-1 {
+  width: 8.333333333333332%;
+}
+
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+.col-xs-pull-11 {
+  right: 91.66666666666666%;
+}
+
+.col-xs-pull-10 {
+  right: 83.33333333333334%;
+}
+
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+.col-xs-pull-8 {
+  right: 66.66666666666666%;
+}
+
+.col-xs-pull-7 {
+  right: 58.333333333333336%;
+}
+
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+.col-xs-pull-5 {
+  right: 41.66666666666667%;
+}
+
+.col-xs-pull-4 {
+  right: 33.33333333333333%;
+}
+
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+.col-xs-pull-2 {
+  right: 16.666666666666664%;
+}
+
+.col-xs-pull-1 {
+  right: 8.333333333333332%;
+}
+
+.col-xs-push-12 {
+  left: 100%;
+}
+
+.col-xs-push-11 {
+  left: 91.66666666666666%;
+}
+
+.col-xs-push-10 {
+  left: 83.33333333333334%;
+}
+
+.col-xs-push-9 {
+  left: 75%;
+}
+
+.col-xs-push-8 {
+  left: 66.66666666666666%;
+}
+
+.col-xs-push-7 {
+  left: 58.333333333333336%;
+}
+
+.col-xs-push-6 {
+  left: 50%;
+}
+
+.col-xs-push-5 {
+  left: 41.66666666666667%;
+}
+
+.col-xs-push-4 {
+  left: 33.33333333333333%;
+}
+
+.col-xs-push-3 {
+  left: 25%;
+}
+
+.col-xs-push-2 {
+  left: 16.666666666666664%;
+}
+
+.col-xs-push-1 {
+  left: 8.333333333333332%;
+}
+
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.66666666666666%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.33333333333334%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.66666666666666%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.333333333333336%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.66666666666667%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.33333333333333%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.666666666666664%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.333333333333332%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666666666666%;
+  }
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666666666666%;
+  }
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.666666666666664%;
+  }
+  .col-sm-1 {
+    width: 8.333333333333332%;
+  }
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  .col-sm-pull-11 {
+    right: 91.66666666666666%;
+  }
+  .col-sm-pull-10 {
+    right: 83.33333333333334%;
+  }
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  .col-sm-pull-8 {
+    right: 66.66666666666666%;
+  }
+  .col-sm-pull-7 {
+    right: 58.333333333333336%;
+  }
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  .col-sm-pull-5 {
+    right: 41.66666666666667%;
+  }
+  .col-sm-pull-4 {
+    right: 33.33333333333333%;
+  }
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  .col-sm-pull-2 {
+    right: 16.666666666666664%;
+  }
+  .col-sm-pull-1 {
+    right: 8.333333333333332%;
+  }
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  .col-sm-push-11 {
+    left: 91.66666666666666%;
+  }
+  .col-sm-push-10 {
+    left: 83.33333333333334%;
+  }
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  .col-sm-push-8 {
+    left: 66.66666666666666%;
+  }
+  .col-sm-push-7 {
+    left: 58.333333333333336%;
+  }
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  .col-sm-push-5 {
+    left: 41.66666666666667%;
+  }
+  .col-sm-push-4 {
+    left: 33.33333333333333%;
+  }
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  .col-sm-push-2 {
+    left: 16.666666666666664%;
+  }
+  .col-sm-push-1 {
+    left: 8.333333333333332%;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666666666666%;
+  }
+  .col-md-10 {
+    width: 83.33333333333334%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666666666666%;
+  }
+  .col-md-7 {
+    width: 58.333333333333336%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666666666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.666666666666664%;
+  }
+  .col-md-1 {
+    width: 8.333333333333332%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666666666666%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333333334%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666666666666%;
+  }
+  .col-md-pull-7 {
+    right: 58.333333333333336%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666666666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.666666666666664%;
+  }
+  .col-md-pull-1 {
+    right: 8.333333333333332%;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666666666666%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333333334%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666666666666%;
+  }
+  .col-md-push-7 {
+    left: 58.333333333333336%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666666666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.666666666666664%;
+  }
+  .col-md-push-1 {
+    left: 8.333333333333332%;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  
+}
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666666666666%;
+  }
+  .col-lg-10 {
+    width: 83.33333333333334%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666666666666%;
+  }
+  .col-lg-7 {
+    width: 58.333333333333336%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666666666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.666666666666664%;
+  }
+  .col-lg-1 {
+    width: 8.333333333333332%;
+  }
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666666666666%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333333334%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666666666666%;
+  }
+  .col-lg-pull-7 {
+    right: 58.333333333333336%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666666666667%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333333333%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-2 {
+    right: 16.666666666666664%;
+  }
+  .col-lg-pull-1 {
+    right: 8.333333333333332%;
+  }
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666666666666%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333333334%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666666666666%;
+  }
+  .col-lg-push-7 {
+    left: 58.333333333333336%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666666666667%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333333333%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-2 {
+    left: 16.666666666666664%;
+  }
+  .col-lg-push-1 {
+    left: 8.333333333333332%;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+}

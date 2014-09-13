@@ -1,0 +1,45 @@
+doctype html
+block vars
+    - var bodyclass = null;
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        meta(name='author' content='Coderbit')
+        meta(name="description" content="Coderbit - front-end developer.")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title CODERBIT - Blog about html, css, javascript, web development and design
+        link(href=locals.url+'/css/main.css', rel='stylesheet')
+    body(class=bodyclass)
+        header.top
+            div.container
+                a(href='http://coderbit.net/').top-logo Coderbit
+                nav#navigation.nav-collapse
+                    ul
+                        li
+                            a(href='http://coderbit.net/blog')
+                                i.fa.fa-coffee
+                                | Blog
+                        li
+                            a(href='http://coderbit.net/portfolio.html')
+                                i.fa.fa-coffee
+                                | Portfolio
+                        li
+                            a(href='http://coderbit.net/contact.html')
+                                i.fa.fa-car
+                                | Contacts
+        div#content.blogpost
+            div.content-wrap
+                block content
+                    h2 Welcome to zombocom!
+        //footer
+        //    div.content-wrap
+        //        block footer
+        //            section.about
+        //            !=contents['about.md'].html
+        //            section.copy
+        //                p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+        //                    a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+        //                    //- please leave the "powered by" if you use the design
+    script(src=href=locals.url+'/js/main.js')
+    //script(src='../js/bundle.js')

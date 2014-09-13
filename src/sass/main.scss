@@ -1,0 +1,395 @@
+//@import "includes/reset";
+@import "includes/normalize";
+@import "includes/variables";
+@import "includes/navigation";
+@import "includes/fullPage";
+@import "includes/blog";
+@import "includes/loader";
+
+
+/*                    **
+**   Default styles   **
+**                    */
+// ______________________________________________________________________________|
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  min-width: 320px;
+  background-color: #f8f8f8;
+  text-rendering: optimizeLegibility;
+  color: $dark;
+  overflow-x: hidden;
+}
+
+a{
+  color: $green_3;
+  text-decoration: none;
+  transition: all ease 500ms;
+}
+
+li {
+  list-style-type: square;
+}
+
+h1, h2, h3 {
+    font-family: $fontMontserrat;
+}
+.hideme
+{
+  opacity:0;
+}
+.pause {
+  animation-play-state:paused!important;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+//shadow inside
+.shadeIn{
+  box-shadow: inset 0px -10px 0px 0px rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 5555;
+}
+
+/* *** INDEX PAGE *** */
+
+/* top line in header: logo + menu*/
+.top{
+  a{
+    color: $dark;
+    font-weight: 800;
+  }
+  .top-logo{
+    transition: none;
+  }
+  overflow: hidden;
+  width: 100%;
+  z-index: 7777;
+
+  &-logo{
+    float: left;
+    font-family: $logoFont;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+    &:hover{
+      color: inherit;
+    }
+  }
+}
+// for index page with slides
+.section{
+  .top {
+    position: absolute;
+    top: 0;
+  }
+}
+
+/* VIEWPORT HEIGHT */
+
+.slogan,
+.web,
+.skills,
+.about{
+  height: 100%;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+/* slogan */
+.slogan {
+  background: url("../img/slogan.jpg") center no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  &-slide{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+  }
+  h1, h2 {
+    opacity: 0;
+    font-family: $fontUbuntu;
+    text-align: left;
+    font-size: 20px;
+    margin: 4px 0;
+    color: $white;
+    position: relative;
+    text-shadow: 1px 1px 1px #5F0000;
+  }
+  .slName {top: -2000px;}
+  .slDev  {right: -2000px;}
+  .slDes  {bottom: -2000px;}
+  .slCode {left: -2000px;}
+  .slWeb  {right: -2000px;}
+}
+
+
+/* all sections except main 1st -.slogan */
+.web,
+.skills,
+.about{
+  .container{
+  }
+  h1 {
+    font-size: 38px;
+    text-align: right;
+    padding-right: 50px;
+    letter-spacing: -2px;
+    z-index: 20;
+    position: relative;
+  }
+  p, ul {
+    padding: 0 50px;
+    font-size: 1em;
+    z-index: 20;
+    position: relative;
+  }
+  p {
+    text-align: justify;
+    text-indent: 20px;
+  }
+  ul {
+//    line-height: 24px;
+  }
+}
+
+/* web  block */
+.web {
+    &-html {
+      background: #C63D0F;
+    }
+    &-css {
+      background: #5db6ee;
+    }
+    &-js {
+      background: #ffb52e;
+    }
+    &-blog{
+      background: $green_1;
+    }
+    &-photoshop {
+      background: #6c91c2;
+    }
+    &-illustrator{
+      background: #dd7a14;
+    }
+  .htmlCode,
+  .cssCode,
+  .jsCode,
+  .blogCode,
+  .photoshopCode,
+  .illustratorCode{
+    display: none;
+  }
+  // svg wrapper
+  .htmlLogo,
+  .cssLogo,
+  .jsLogo,
+  .blogLogo,
+  .photoshopLogo,
+  .illustratorLogo,
+  .photoshopLogo,
+  .illustratorLogo {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    z-index: 10;
+    width: 100px;
+    height: 110px;
+  }
+  .photoshopLogo,
+  .illustratorLogo {
+    bottom: -4px;
+  }
+}
+
+
+/* skills overall*/
+.skills{
+//  background: url("../img/connect.png")
+//  background: url("../img/dia.png");
+//  background-size: 16px;
+  ul {
+  }
+}
+
+/* final section about*/
+.about{
+//  background: #ffbe52;
+//  background: url("../img/dia.png");
+//  background-size: 16px;
+  background-color: #FFF770;
+}
+
+/* pop up */
+.popUp {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  background: #2B3134;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+
+//  320px ! ! ! ! FOR DEVELOPMENT ONLY
+// ______________________________________________________________________________|
+@media (max-width: 320px) { .container {  @include container(100%);  } }
+
+//  from 768px to 959 ! ! ! !
+// ______________________________________________________________________________|
+@media (min-width: $tablet) {
+  .container {
+    @include container($tablet);
+  }
+  // HOVERS
+  a {
+    &:hover {
+      color: $green_2;
+    }
+  }
+  /* slogan */
+  .slogan {
+//    background-position-x: 70%;
+    &-slide {
+      bottom: 10%;
+    }
+    h1, h2 {
+      font-size: 32px;
+    }
+  }
+  /* all slides general  */
+  .web,
+  .design,
+  .skills,
+  .about{
+    .container{
+      padding-top: 60px;
+    }
+    h1 {
+      font-size: 52px;
+      padding: 0 70px;
+    }
+    p {
+      padding: 0 160px;
+      font-size: 1.4em;
+      line-height: 1.4em;
+    }
+  }
+  /* each block */
+  .web{
+    .htmlCode,
+    .cssCode,
+    .jsCode,
+    .blogCode,
+    .photoshopCode,
+    .illustratorCode {
+      display: block;
+      position: relative;
+      width: 400px;
+      margin: 0 auto;
+      height: 100%;
+      transform-style: preserve-3d;
+      pre,
+      svg:not(:root){
+        overflow: hidden;
+        padding: 10px;
+        position: relative;
+        top: 20%;
+        transform: translateY(-60%);
+      }
+      pre{
+        code{
+          line-height: 0.4em;
+        }
+      }
+    }
+    .photoshopCode,
+    .illustratorCode {
+      height: 240px;
+      top: 10%;
+    }
+    // svg wrapper
+    .htmlLogo,
+    .cssLogo,
+    .jsLogo,
+    .blogLogo,
+    .photoshopLogo,
+    .illustratorLogo {
+      left: 40px;
+      bottom: -30px;
+      width: 240px;
+      height: 200px;
+    }
+    .photoshopLogo,
+    .illustratorLogo {
+      bottom: -4px;
+    }
+  }
+  /* skills overall*/
+  .skills{
+    ul {
+      margin-left: 40px;
+      line-height: 32px;
+      font-size: 22px;
+    }
+  }
+}
+
+//  from 960px to 1199 ! ! ! !
+// ______________________________________________________________________________|
+@media (min-width: $small) {
+  .container {
+    @include container($small);
+  }
+  /* all slides general  */
+  .web,
+  .skills,
+  .about{
+    .container{
+    }
+    h1 {
+      font-size: 62px;
+      padding: 0 100px;
+      margin-top: 10px;
+    }
+  }
+}
+
+// from 1200 - final maxWidth
+// ______________________________________________________________________________|
+@media (min-width: $large) {
+//  .container {
+//    @include container($large);
+//  }
+  .web,
+  .skills,
+  .about {
+    .container {
+    }
+    h1 {
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+  }
+}
+

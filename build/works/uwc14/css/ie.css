@@ -1,0 +1,13 @@
+.contacts .transition,
+.transition > span {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.onLoad form input {
+	padding-top: 20px;
+}
+
+.onLoad form button span {
+    top: 5px;
+}
+

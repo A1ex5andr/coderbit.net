@@ -1,0 +1,43 @@
+//colors
+$white: #ffffff;
+$gray: #888888;
+$green_1: #44BF87;
+$green_2: #1D8281;
+$green_3: #176765;
+$orange_1: #FBD258;
+$orange_2: #F29A3F;
+$orange_3: #DB634F;
+$dark: #171717;
+
+
+//fonts
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+$logoFont: 'Kaushan Script', cursive;
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+$fontMontserrat: 'Montserrat', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=cyrillic-ext,latin);
+$fontUbuntu: 'Ubuntu', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Play:400,700&subset=latin,cyrillic);
+$fontPlay: 'Play', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900,700&subset=latin,cyrillic);
+$fontRoboto: 'Roboto', sans-serif;
+
+
+//main class="container"
+@mixin container($data){
+  max-width: $data;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// media queries @media (min-width: $data)
+$mobile: 767px;
+$tablet: 768px;
+$small: 992px;
+$large: 1200px;
+
+// media queries max-width: $data;
+$tabletContainer: 752px;
+$smallContainer: 970px;
+$largeContainer: 970px;
+//$largeContainer: 1170px;

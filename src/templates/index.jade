@@ -1,0 +1,251 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+        meta(name='author' content='Coderbit')
+        meta(name="description" content="Coderbit - front-end developer.")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title CODERBIT - Web Development & Design
+        link(href='css/main.css', rel='stylesheet')
+    body
+        div.popUp
+            div.preLoader
+                h1 loading
+                ul#preLoader-spinner
+                    li#a
+                    li#b
+                    li#c
+                    li#d
+                    li#e
+                    li#f
+                    li#g
+                    li#h
+                    li#i
+
+        div#slideBlocks
+            div.section
+                header.top
+                    div.container
+                        a(href='http://coderbit.net/').top-logo Coderbit
+                        nav#navigation.nav-collapse
+                            ul
+                                li
+                                    a(href='http://coderbit.net/blog')
+                                        i.fa.fa-coffee
+                                        | Blog
+                                li
+                                    a(href='http://coderbit.net/portfolio.html')
+                                        i.fa.fa-coffee
+                                        | Portfolio
+                                li
+                                    a(href='http://coderbit.net/contact.html')
+                                        i.fa.fa-car
+                                        | Contacts
+                .slogan
+                    .container
+                        div.slogan-slide
+                            h2.slName   Hi, my name is Alexander
+                            h1.slDev    I'm a frontend developer
+                            h1.slDes    and graphic designer
+                            h2.slCode   I love to write code
+                            h2.slWeb    and creat web :)
+
+            div.section
+                .web
+                    .shadeIn
+                    .slide.web-html
+                        .container
+                            h1 HTML
+                            p
+                                |Though it's the basic and the simplest of all possible languages you can't do web without it.
+                                |But you can use it right. And I know how ))
+                                <a href="http://www.html5rocks.com/" target="_blank"> html5 </a>
+                                |is today's standard and its semantic improves all the time. In my work I prefer to use
+                                <a href="http://jade-lang.com" target="_blank"> jade </a>
+                                | (node template engine) to write layouts fast and future proof.
+                            .htmlCode
+                                pre
+                                    code
+                                        div doctype html
+                                        div.tag html(<span class="value">lang="en"</span>)
+                                        div.tag     head
+                                        div.tag       title <span class="value">Web Development & Design</span>
+                                        div.tag       meta(<span class="value">charset="UTF-8"</span>)
+                                        div.tag.
+                                            &#32;body
+                                        div.tag     h1 <span class="value">Jade - node template engine</span>
+                                        div.tag         .container
+                                        div.tag             img(<span class="value">src="love2code.png"</span>)
+                                        div.tag             h2 <span class="value">Jade Rocks HTML5</span>
+                                        div.tag             p.
+                                        div.tag                 <span class="value">Jade is a terse and simple</span>
+                                        div.tag                 <span class="value">templating language with a</span>
+                                        div.tag                 <span class="value">strong focus on performance</span>
+                                        div.tag                 <span class="value">and powerful features.</span>
+                            .htmlLogo.logoBg
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="110%" viewBox="26 228.35 297.45 337.339" enable-background="new 26 228.35 297.45 337.339"><path fill="#E45126" d="M53.07 531.97L26 228.35h297.45l-27.098 303.57-121.81 33.77z"/><path fill="#F1682B" d="M174.725 539.878l98.427-27.287 23.158-259.415H174.725z"/><path fill="#EBEBEB" d="M174.725 365.785H125.45l-3.404-38.133h52.68v-37.238H81.35l.892 9.99 9.152 102.615h83.33zM174.725 462.492l-.163.047-41.472-11.203-2.652-29.697H93.058l5.217 58.47 76.278 21.175.172-.05z"/><path fill="#fff" d="M174.596 365.785v37.234h45.854l-4.323 48.292-41.53 11.21v38.745l76.34-21.158.558-6.292 8.752-98.035.908-9.998H251.12zM174.596 290.414v37.239h89.946l.748-8.37 1.696-18.878.89-9.99z"/></svg>
+                    .slide.web-css
+                        .container
+                            h1 CSS
+                            p
+                                |That's when design talks )) css is also very simple but powerful tool.
+                                |You can lose all your visitors because of it or recieve
+                                <a href="http://www.awwwards.com/" target="_blank")> awwwards</a>,
+                                |if used right. Todays css coding is impossible without such awsome things like
+                                <a href="http://sass-lang.com/" target="_blank"> Sass/SCSS</a>.
+                                |Still, with css3 you always have to look for balance between new features and old browsers.
+                            .cssCode
+                                pre.css
+                                    code
+                                        div.keyword $font-stack: <span class="value">Helvetica</span>
+                                        div.keyword $primary-color: <span class="value">#333;</span>
+                                        div <br>
+                                        div.keyword body {
+                                        div.keyword  <span class="value">font: 100% $font-stack;</span>
+                                        div.keyword  <span class="value">color: $primary-color;</span>
+                                        div.keyword }
+                                        div.keyword nav {
+                                        div.keyword  ul {
+                                        div.keyword    <span class="value">margin: 0;</span>
+                                        div.keyword    <span class="value">padding: 0;</span>
+                                        div.keyword    <span class="value">list-style: none;</span>
+                                        div.keyword  }
+                                        div.keyword  li { <span class="value">display: inline-block;</span> }
+                                        div.keyword
+                            .cssLogo.logoBg
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="110%" viewBox="700.55 228.374 297.45 337.341" enable-background="new 700.55 228.374 297.45 337.341"><path fill="#1673B6" d="M727.62 531.994l-27.07-303.62H998l-27.097 303.57-121.81 33.77z"/><path fill="#35A9DB" d="M849.276 539.904l98.427-27.29L970.86 253.2H849.276z"/><path fill="#fff" d="M849.275 363.2h49.276l3.403-38.132h-52.678v-37.24h93.375l-.892 9.992-9.153 102.616h-83.33z"/><path fill="#EBEBEB" d="M849.498 459.907l-.162.047-41.473-11.2-2.65-29.697h-37.38l5.217 58.468 76.276 21.176.172-.048z"/><path fill="#fff" d="M895.386 398.86l-4.485 49.87-41.53 11.21v38.742l76.34-21.157.56-6.29 6.476-72.376z"/><path fill="#EBEBEB" d="M849.404 287.83v37.237H759.456l-.745-8.37-1.696-18.877-.89-9.99zM849.275 363.204V400.44h-40.948l-.745-8.367-1.697-18.878-.89-9.99z"/></svg>s
+                    .slide.web-js
+                        .container
+                            h1 JS
+                            p Well, can you imagine web without all its functionality? Me neither ))
+                                <a href="https://developer.mozilla.org/en/docs/Web/JavaScript" target="_blank"> javascript </a>
+                                |is a heart of the web and, thankfully to such a great things like
+                                <a href="http://nodejs.org/" target="_blank"> node.js </a> and
+                                <a href="http://gulpjs.com/" target="_blank"> gulp </a> it's getting more and more irreplaceable. With
+                                <a href="http://jquery.com/" target="_blank"> jQuery </a> and
+                                <a href="http://gulpjs.com/" target="_blank"> gulp </a>
+                                |coding a frontend is like writing a poetry of functions, methods and prototypes.
+                            .jsCode
+                                pre.javascript
+                                    code
+                                        div.comment // js makes web dynamic
+                                        div var <span class="variable">skills</span>;
+                                        div skills = {
+                                        div     <span class="variable">layout: 'html'</span>,
+                                        div     <span class="variable">style: 'css'</span>,
+                                        div     <span class="variable">programming: 'javascript'</span>,
+                                        div     <span class="variable">design: 'photoshop'</span>
+                                        div };
+                                        div for (var <span class="variable">key</span> in <span class="variable">skills</span>) {
+                                        div     if (skills.hasOwnProperty(key)) {
+                                        div         console.log(<span class="variable">skills[key] + ' is good!'</span>);
+                                        div     };
+                                        div };
+                            .jsLogo.logoBg
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="110%" viewBox="363.275 105.132 297.449 337.342" enable-background="new 363.275 105.132 297.449 337.342"><path fill="#E4A227" d="M390.345 408.753l-27.07-303.62h297.45l-27.098 303.572-121.81 33.77z"/><path fill="#F0BF26" d="M511.75 416.287L610.178 389l23.158-259.417H511.75z"/><path fill="#EBEBEB" d="M511.693 338.925l-.162.048-41.47-11.2-2.654-29.697H430.026l5.218 58.466 76.277 21.176.173-.05zM516.71 279.437V242.2h-45.855l5.377-58.443 40.58-1.08-.103-38.723h-74.146l-2.753 27.45-8.75 98.034-.91 10h10.036z"/><path fill="#fff" d="M516.457 182.73l.163-.047 40.67 2.45 3.452 38.447H598.122l-6.513-71.947-74.98-7.696-.173.048zM594.284 182.843l-3.19-38.89H512.49v38.89h81.794"/><path fill="#fff" d="M511.564 242.218v37.237h45.854l-4.322 48.293-41.532 11.21V377.7l76.34-21.158.56-6.29 8.75-98.036.91-9.998h-10.036zM589.5 181.193"/></svg>s
+                    //-.slide.web-blog
+                        .container
+                            h1 Blog
+                            p I do like wordpress but sometimes it's such an overkill, especially if we are talking about blogging.
+                                <a href="http://wintersmith.io/" target="_blank"> Wintersmith </a>
+                                |is my choice. Fast, easy and nice looking. The fact its built on top of node.js just makes it even better. With
+                                <a href="http://wintersmith.io/" target="_blank"> Wintersmith </a>
+                                |you can start basic blog, figuratively speaking, in just a few clicks! Whats next?
+                                |Just develop it the way you want!
+                            .blogCode
+                                pre
+                                    code
+                                        div ---
+                                        div title: Coding is fun!
+                                        div author: SashaYu
+                                        div date: 2010-10-01 10:00
+                                        div template: article.jade
+                                        div ---
+                                        div <br>
+                                        div # From Blank Page to Blog
+                                        div Markdown is a plain text formatting syntax.
+                                        div <br>
+                                        div ### Blogging is easy and fast now
+                                        div <br>
+                                        div > This is a blockquote.
+                                        div > This is the second paragraph in the blockquote.
+                                        div > ## This is an H2 in a blockquote
+                            .blogLogo.logoBg
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 126.006 126.005"><path fill-rule="evenodd" clip-rule="evenodd" fill="#0fa" d="M109.77 85.136V58.562H83.196c-2.032-9.283-10.3-16.235-20.193-16.235-9.895 0-18.162 6.952-20.194 16.235H25.117V40.87c9.284-2.033 16.235-10.3 16.235-20.194C41.353 9.256 32.096 0 20.677 0 9.257 0 0 9.256 0 20.675c0 9.895 6.952 18.16 16.236 20.193v26.574H42.81c2.033 9.285 10.3 16.236 20.194 16.236 9.894 0 18.16-6.95 20.193-16.236h17.69v17.693c-9.283 2.032-16.234 10.298-16.234 20.192 0 11.42 9.257 20.677 20.677 20.677s20.677-9.258 20.677-20.677c0-9.893-6.953-18.16-16.237-20.19zM8.88 20.676c0-6.504 5.293-11.795 11.797-11.795 6.504 0 11.795 5.292 11.795 11.795 0 6.504-5.29 11.796-11.795 11.796-6.504 0-11.796-5.29-11.796-11.795zm54.123 54.122c-6.504 0-11.795-5.292-11.795-11.796s5.29-11.794 11.795-11.794c6.503 0 11.794 5.29 11.794 11.794 0 6.503-5.29 11.796-11.794 11.796zm42.326 42.325c-6.506 0-11.797-5.292-11.797-11.795 0-6.504 5.29-11.794 11.796-11.794 6.503 0 11.795 5.29 11.795 11.794 0 6.504-5.292 11.795-11.796 11.795z"/></svg>s
+                    .slide.web-photoshop
+                        .container
+                            h1 Photoshop
+                            p Photoshop is something web development would suffer without. Layouts, mockups, positioning, color management, ui/ux planning, image optimisation and much much more - thats what it's all about. I prefer to visualize design before coding, knowing how viewports would look like and always start mobile first. Design before coding is a big time booster!
+                            .photoshopCode
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 5641.078 2567.833"><g fill="#191919"><path d="M2927.998 2456.25c-5.357 46.052-18.21 58.915-50.34 67.478-26.63 7.094-62.695 15.248-77.727 19.11-15.03 3.866-19.753 6.476-19.753 9.458 0 0 0 .162.033.45.014.147.032.294.06.437.65 3.963 86.25 14.65 127.975 14.65h723.532c41.72 0 127.324-10.688 127.97-14.65.03-.143.048-.29.063-.436.03-.29.03-.45.03-.45 0-2.983-4.72-5.593-19.75-9.458-15.03-3.864-51.1-12.02-77.728-19.112-32.128-8.562-44.983-21.426-50.34-67.48-4.004-34.433-15.192-170.65-20.583-237.196h-642.86c-5.39 66.546-16.577 202.763-20.582 237.197zM4809.857 0h-3079.7c-40.08 0-72.684 32.61-72.684 72.69v2071.67c0 40.083 32.604 72.692 72.685 72.692h1219.64v.004h640.423v-.004H4809.86c40.085 0 72.69-32.61 72.69-72.69V72.69c0-40.082-32.606-72.692-72.69-72.692zm-63.99 1782.352H1794.153V136.68h2951.714v1645.672z"/></g><path fill="#EBEDEC" d="M1794.153 113.455h2951.714V1808.91H1794.153z"/><path fill="#D4145A" d="M1853.72 172.546h2827.272v172.728H1853.72z"/><path fill="#FCEE21" d="M1853.72 431.637h2827.272v440.91H1853.72z"/><path fill="#0071BC" d="M1853.72 961.182h859.09v743.182h-859.09zM3821.9 961.182h859.09v743.182H3821.9zM2837.81 961.182h859.092v743.182h-859.09z"/><circle cx="2299.261" cy="1134.151" r="15.5" fill="none"/><path fill="#191919" d="M2738.42 2490.635c0-1.744-1.426-3.172-3.176-3.172h-268.707c.056-.102.106-.21.16-.31H1595.37c-3.56 17.894-19.343 31.382-38.282 31.382H1181.33c-18.94 0-34.723-13.488-38.28-31.383H271.72c.056.102.106.21.16.31H3.178c-1.744 0-3.177 1.43-3.177 3.173v39.162c0 1.746.715 3.332 1.866 4.482H1.83S33 2567.83 127.674 2567.83h2483.042c94.676 0 125.844-33.553 125.844-33.553h-.004c1.15-1.15 1.863-2.737 1.863-4.483v-39.162z"/><path fill="none" d="M393.293 2341.354H2346.83v11.21H393.294z"/><path fill="#191919" d="M2402.13 1034.22H336.29c-40.165 0-73.027 32.863-73.027 73.032v1388.73h2211.9V1107.25c0-40.17-32.862-73.033-73.03-73.033zm-55.3 1337.134v11.21H393.294V1162.76H2346.83v1208.594z"/><path fill="#EBEDEC" d="M2346.83 2371.354v11.21H393.294V1162.76H2346.83z"/><path fill="#D4145A" d="M435.63 1206.98H2299.26v127.912H435.63z"/><path fill="#FCEE21" d="M435.63 1398.848H2299.26v326.512H435.63z"/><path fill="#0071BC" d="M435.63 1790.998h566.28v550.356H435.63zM1732.98 1790.998h566.28v550.356h-566.28zM1084.305 1790.998h566.28v550.356h-566.28z"/><path fill="#191919" d="M5274.812 894.64H4081.948c-29.297 0-53.123 23.827-53.123 53.124v1566.93c0 29.305 23.826 53.14 53.123 53.14H5274.81c29.302 0 53.13-23.835 53.13-53.14V947.764c0-29.297-23.828-53.124-53.128-53.124zM4678.38 2520.274c-15.943 0-28.866-12.924-28.866-28.865 0-15.944 12.923-28.868 28.866-28.868 15.94 0 28.865 12.924 28.865 28.867 0 15.94-12.925 28.864-28.865 28.864zm525.04-105.654H4153.345V1047.86H5203.42v1366.76z"/><path fill="#EBEDEC" d="M4153.344 1047.86H5203.42v1366.76H4153.344z"/><path fill="#D4145A" d="M4214.365 1098.53h943.11v172.727h-943.11z"/><path fill="#FCEE21" d="M4214.365 1330.62h943.11v440.91h-943.11z"/><path fill="#0071BC" d="M4214.365 1846.165h943.11v234.473h-943.11zM4214.365 2140.147h943.11v234.473h-943.11z"/><path fill="#191919" d="M5561.82 1479.333h-358.885c-43.87 0-79.952 34.145-79.952 78.018v929.11c0 43.873 36.08 81.373 79.952 81.373H5561.9c43.87 0 79.178-37.5 79.178-81.373v-929.11c0-43.873-35.386-78.017-79.258-78.017zm-221.985 76.673h83.31c4.823 0 8.73 2.92 8.73 7.74 0 4.822-3.907 7.742-8.73 7.742h-83.31c-4.82 0-8.73-2.92-8.73-7.742 0-4.82 3.91-7.74 8.73-7.74zm41.657 952.81c-14.326 0-25.938-11.612-25.938-25.938s11.612-25.936 25.938-25.936c14.324 0 25.938 11.61 25.938 25.936s-11.614 25.94-25.938 25.94zm211.015-110.362h-420.952v-750.988h420.952v750.988z"/><path fill="#EBEDEC" d="M5171.555 1647.465h420.952v750.988h-420.952z"/><path fill="#D4145A" d="M5463.447 1673.802h116.06v94.32h-116.06z"/><path fill="#FCEE21" d="M5190.42 1800.537h389.088V2041.3H5190.42z"/><path fill="#0071BC" d="M5190.42 2082.053h389.088v300.51H5190.42z"/></svg>
+                            .photoshopLogo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 89.659 87.016"><linearGradient id="pshp" gradientUnits="userSpaceOnUse" x1=".661" y1="-.66" x2="88.998" y2="87.677"><stop offset="0" stop-color="#322E7C"/><stop offset="1" stop-color="#272861"/></linearGradient><path opacity=".95" fill="url(#pshp)" d="M0 0h89.66v87.016H0z"/><path fill="#010101" d="M21.682 24.23c2.623-.478 6.258-.836 11.205-.836 5.365 0 9.298 1.132 11.86 3.278 2.384 1.967 3.935 5.126 3.935 8.88 0 3.814-1.19 6.974-3.457 9.12-2.92 2.92-7.51 4.29-12.695 4.29-1.37 0-2.622-.06-3.576-.238v15.14h-7.27V24.228zm7.272 18.713c.895.238 2.086.298 3.576.298 5.483 0 8.82-2.68 8.82-7.39 0-4.47-3.1-6.854-8.165-6.854-2.026 0-3.456.18-4.23.358v13.59z" opacity=".1"/><linearGradient id="pshb" gradientUnits="userSpaceOnUse" x1="21.424" y1="42.303" x2="69.812" y2="42.303"><stop offset="0" stop-color="#9BC5E9"/><stop offset="1" stop-color="#7CB2E0"/></linearGradient><path fill="url(#pshb)" d="M21.682 22.903c2.623-.477 6.258-.835 11.205-.835 5.365 0 9.298 1.132 11.86 3.278 2.384 1.967 3.935 5.126 3.935 8.88 0 3.814-1.19 6.974-3.457 9.12-2.92 2.92-7.51 4.29-12.695 4.29-1.37 0-2.622-.06-3.576-.238v15.14h-7.27V22.902zm7.272 18.715c.895.238 2.086.298 3.576.298 5.483 0 8.82-2.682 8.82-7.39 0-4.47-3.1-6.855-8.165-6.855-2.026 0-3.456.18-4.23.36v13.588z"/><path fill="#010101" d="M50.943 57.128c1.67 1.014 4.828 2.086 7.45 2.086 3.22 0 4.648-1.312 4.648-3.22 0-1.966-1.19-2.98-4.767-4.23-5.662-1.967-8.046-5.066-7.987-8.463 0-5.124 4.233-9.118 10.968-9.118 3.218 0 6.02.834 7.688 1.73l-1.43 5.184c-1.252-.716-3.576-1.668-6.14-1.668-2.622 0-4.052 1.25-4.052 3.04 0 1.848 1.37 2.74 5.066 4.053 5.244 1.908 7.688 4.59 7.748 8.88 0 5.246-4.113 9.12-11.802 9.12-3.517 0-6.676-.894-8.82-2.085l1.43-5.307z" opacity=".1"/><linearGradient id="pshc" gradientUnits="userSpaceOnUse" x1="21.426" y1="48.024" x2="69.813" y2="48.024"><stop offset="0" stop-color="#9BC5E9"/><stop offset="1" stop-color="#7CB2E0"/></linearGradient><path fill="url(#pshc)" d="M50.943 55.803c1.67 1.014 4.828 2.086 7.45 2.086 3.22 0 4.648-1.313 4.648-3.22 0-1.967-1.19-2.98-4.767-4.232-5.662-1.966-8.046-5.065-7.987-8.462 0-5.125 4.233-9.12 10.968-9.12 3.218 0 6.02.835 7.688 1.73l-1.43 5.185c-1.252-.715-3.576-1.667-6.14-1.667-2.622 0-4.052 1.25-4.052 3.04 0 1.848 1.37 2.74 5.066 4.053 5.244 1.907 7.688 4.59 7.748 8.88 0 5.245-4.113 9.12-11.802 9.12-3.517 0-6.676-.895-8.82-2.086l1.43-5.307z"/></svg>s
+                    .slide.web-illustrator
+                        .container
+                            h1 Illustrator
+                            p  Before SVG grew its popularity, illustrator wasn't that much of a web developer tool. Today, in the era of retina displays and high resolution gadgets, at least svg logo is a must, for a respectful webpage. Graphic design is also useful when creating icons or some special parts of web page. Anyway, if we talk about quality - we talk about vector graphics.
+                            .illustratorCode
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="342.223 264.351 917.554 373.295" enable-background="new 342.223 264.351 917.554 373.295"><circle fill="#B37D2B" cx="586.754" cy="584.646" r="6"/><path fill="#B37D2B" d="M384.012 625.646h128v4h-128z"/><circle fill="#B37D2B" cx="384.012" cy="627.646" r="6"/><circle fill="#B37D2B" cx="512.012" cy="627.646" r="6"/><path fill="#fff" d="M442.012 621.646h12v12h-12z"/><path fill="#B37D2B" d="M456.012 635.646h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M715.418 616.53h12v12h-12z"/><path fill="#B37D2B" d="M729.418 630.53h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M806.543 616.53h12v12h-12z"/><path fill="#B37D2B" d="M820.542 630.53h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M1168.52 479.835h12v12h-12z"/><path fill="#B37D2B" d="M1182.52 493.835h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M1243.776 418.913h12v12h-12z"/><path fill="#B37D2B" d="M1257.776 432.913h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M1168.52 552.54h12v11.997h-12z"/><path fill="#B37D2B" d="M1182.52 566.537h-16V550.54h16v15.997zm-12-4h8v-7.998h-8v7.997z"/><path fill="#fff" d="M1243.776 600.662h12v12h-12z"/><path fill="#B37D2B" d="M1257.776 614.662h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><circle fill="#B37D2B" cx="945.675" cy="558.095" r="6"/><circle fill="#B37D2B" cx="1206.776" cy="273.882" r="6"/><path fill="#B37D2B" d="M1030.585 624.115h168.004v4h-168.005z"/><circle fill="#B37D2B" cx="1030.585" cy="626.115" r="6"/><circle fill="#B37D2B" cx="1198.589" cy="626.115" r="6"/><path fill="#fff" d="M1128.59 620.115h12v12h-12z"/><path fill="#B37D2B" d="M1142.59 634.115h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><circle fill="#B37D2B" cx="507.395" cy="570.279" r="6"/><path fill="#231F20" d="M376.098 552.156c20.478 10.75 53.242 21.498 86.523 21.498 35.837 0 54.773-14.842 54.773-37.373 0-21.5-16.383-33.788-57.852-48.124-57.335-20.478-95.218-52.22-95.218-102.39 0-58.876 49.655-103.415 130.547-103.415 39.42 0 67.577 7.68 88.054 17.407l-17.406 62.46c-13.312-6.655-38.397-16.39-71.672-16.39-33.79 0-50.172 15.875-50.172 33.28 0 22.017 18.945 31.743 63.992 48.642 60.922 22.522 89.086 54.265 89.086 102.898 0 57.85-44.03 106.998-138.742 106.998-39.422 0-78.336-10.75-97.79-21.5l15.878-63.99z"/><path fill="#B37D2B" d="M448.012 629.646c-40.81 0-79.8-11.273-98.756-21.75l-1.344-.742 16.856-67.953 2.26 1.185c19.587 10.283 52.355 21.27 85.593 21.27 33.046 0 52.773-13.223 52.773-35.372 0-19.713-14.786-31.813-56.506-46.235-64.983-23.21-96.563-57.315-96.563-104.28 0-63.052 53.266-105.415 132.547-105.415 34.413 0 64.33 5.922 88.913 17.6l1.52.723-18.51 66.418-2.17-1.084c-14.76-7.38-39.022-16.18-70.776-16.18-33.276 0-48.172 15.71-48.172 31.28 0 19.89 15.654 29.123 62.695 46.77 62.504 23.108 90.383 55.423 90.383 104.77 0 52.69-36.972 108.996-140.74 108.996zm-95.475-24.523c18.98 10.023 56.322 20.523 95.475 20.523 100.82 0 136.742-54.238 136.742-104.998 0-47.423-27.072-78.58-87.78-101.024-45.402-17.03-65.298-26.955-65.298-50.516 0-17.56 16.133-35.28 52.172-35.28 31.02 0 55.088 8.208 70.392 15.536l16.307-58.514c-23.758-10.95-52.57-16.5-85.674-16.5-76.89 0-128.547 40.756-128.547 101.414 0 45.068 30.713 77.943 93.89 100.508 43.69 15.102 59.182 28.19 59.182 50.008 0 24.655-21.226 39.373-56.773 39.373-32.713 0-64.98-10.414-85.19-20.564l-14.898 60.033z"/><path fill="#231F20" d="M731.418 632.53L620.832 287.467h85.492l41.983 145.906c11.773 41.47 23.293 80.383 31.488 123.383 8.703-41.47 20.223-82.422 31.996-121.844l44.03-147.445h82.94l-116.216 345.06h-91.126z"/><path fill="#B37D2B" d="M813.98 624.53h-94.02L608.09 275.467h89.738l45.768 159.18c9.787 34.347 19.078 66.942 26.283 102.212 8.884-40.32 20.075-79.295 29.997-112.52l44.458-148.872h87.21L813.98 624.528zm-91.103-4h88.23L925.98 279.467h-78.664L803.71 425.486c-10.674 35.744-22.818 78.152-31.955 121.682l-2.05 9.775-1.872-9.812c-7.396-38.804-17.443-74.06-28.082-111.388l-3.364-11.822-41.566-144.452h-81.246l109.303 341.06z"/><path fill="#231F20" d="M1259.776 616.662c-24.062 8.188-69.625 19.453-115.188 19.453-62.977 0-108.54-15.875-140.28-46.078-31.228-30.2-48.634-75.256-48.634-125.944.508-114.68 83.96-180.21 197.103-180.21 44.538 0 78.844 8.702 95.733 16.382l-16.383 62.977c-18.938-8.703-41.977-14.852-79.86-14.852-65.02 0-114.68 36.352-114.68 111.61 0 71.67 45.048 113.138 109.048 113.138 17.406 0 31.742-2.047 37.883-4.602v-72.702h-53.24v-60.922h128.5v181.75z"/><path fill="#B37D2B" d="M1134.59 628.115c-62.35 0-108.685-15.25-141.66-46.63-31.767-30.723-49.255-75.962-49.255-127.393.492-110.69 78.646-182.21 199.103-182.21 44.34 0 78.953 8.554 96.562 16.56l1.53.696-17.405 66.916-2.172-.998c-14.86-6.828-37.272-14.668-79.022-14.668-70.555 0-112.68 40.975-112.68 109.61 0 67.515 42.02 111.138 107.047 111.138 16.98 0 29.884-1.934 35.884-3.983v-69.32h-53.24v-64.92h132.5v185.18l-1.356.462c-27.792 9.458-72.816 19.56-115.835 19.56zm8.186-352.233c-118.04 0-194.62 69.955-195.103 178.22 0 50.328 17.055 94.547 48.023 124.498 32.184 30.625 77.62 45.517 138.89 45.517 41.84 0 85.606-9.672 113.19-18.888V426.912h-124.5v56.922h53.24v76.038l-1.23.512c-6.944 2.888-22.116 4.754-38.65 4.754-67.458 0-111.048-45.193-111.048-115.14 0-70.076 44.71-113.61 116.68-113.61 32.126 0 56.474 4.347 78.52 14.058l15.36-59.04c-17.665-7.634-50.934-15.526-93.372-15.526zM352.324 311.765h4v128h-4z"/><circle fill="#B37D2B" cx="354.324" cy="311.765" r="6"/><circle fill="#B37D2B" cx="354.324" cy="439.765" r="6"/><path fill="#fff" d="M348.324 369.765h12v12h-12z"/><path fill="#B37D2B" d="M362.324 383.765h-16v-16h16v16zm-12-4h8v-8h-8v8zM584.754 456.647h4v128h-4z"/><circle fill="#B37D2B" cx="586.754" cy="456.647" r="6"/><path fill="#fff" d="M580.754 514.648h12v12h-12z"/><path fill="#B37D2B" d="M594.754 528.648h-16v-16h16v16zm-12-4h8v-8h-8v8zM420.87 270.35h128v4h-128z"/><circle fill="#B37D2B" cx="420.871" cy="272.351" r="6"/><circle fill="#B37D2B" cx="548.871" cy="272.351" r="6"/><path fill="#fff" d="M478.87 266.35h12v12h-12z"/><path fill="#B37D2B" d="M492.87 280.35h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M604.832 271.468h12v12h-12z"/><path fill="#B37D2B" d="M618.832 285.468h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M690.324 271.468h12v12h-12z"/><path fill="#B37D2B" d="M704.324 285.468h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M763.797 540.757h12v12h-12z"/><path fill="#B37D2B" d="M777.797 554.757h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M839.823 271.468h12v12h-12z"/><path fill="#B37D2B" d="M853.823 285.468h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M922.76 271.468h12v12h-12z"/><path fill="#B37D2B" d="M936.76 285.468h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M1115.276 479.835h12v12h-12z"/><path fill="#B37D2B" d="M1129.276 493.835h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M1115.276 418.913h12v12h-12z"/><path fill="#B37D2B" d="M1129.276 432.913h-16v-16h16v16zm-12-4h8v-8h-8v8zM943.675 350.09h4v208.005h-4z"/><circle fill="#B37D2B" cx="945.675" cy="350.089" r="6"/><path fill="#fff" d="M939.675 448.093h12v12h-12z"/><path fill="#B37D2B" d="M953.675 462.093h-16v-16h16v16zm-12-4h8v-8h-8v8zM1038.77 271.882h168.006v4H1038.77z"/><circle fill="#B37D2B" cx="1038.771" cy="273.882" r="6"/><path fill="#fff" d="M1136.776 267.882h12v12h-12z"/><path fill="#B37D2B" d="M1150.776 281.882h-16v-16h16v16zm-12-4h8v-8h-8v8zM1025.59 390.093h4v128h-4z"/><circle fill="#B37D2B" cx="1027.589" cy="390.093" r="6"/><circle fill="#B37D2B" cx="1027.589" cy="518.093" r="6"/><path fill="#fff" d="M1021.59 448.093h12v12h-12z"/><path fill="#B37D2B" d="M1035.59 462.093h-16v-16h16v16zm-12-4h8v-8h-8v8zM431.676 325.108h4v88h-4z"/><circle fill="#B37D2B" cx="433.676" cy="325.108" r="6"/><circle fill="#B37D2B" cx="433.676" cy="413.108" r="6"/><path fill="#fff" d="M427.676 363.108h12v12h-12z"/><path fill="#B37D2B" d="M441.676 377.108h-16v-16h16v16zm-12-4h8v-8h-8v8zM505.395 482.28h4v88h-4z"/><circle fill="#B37D2B" cx="507.395" cy="482.28" r="6"/><path fill="#fff" d="M501.395 520.28h12v12h-12z"/><path fill="#B37D2B" d="M515.395 534.28h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M549.52 346.218h12v12h-12z"/><path fill="#B37D2B" d="M563.52 360.218h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M566.926 283.757h12v12h-12z"/><path fill="#B37D2B" d="M580.926 297.757h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M360.098 536.156h12v12h-12z"/><path fill="#B37D2B" d="M374.098 550.156h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M344.223 600.146h12v12h-12z"/><path fill="#B37D2B" d="M358.223 614.146h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M1216.128 347.24h12v12h-12z"/><path fill="#B37D2B" d="M1230.128 361.24h-16v-16h16v16zm-12-4h8v-8h-8v8z"/><path fill="#fff" d="M1232.51 284.265h12v12h-12z"/><path fill="#B37D2B" d="M1246.51 298.265h-16v-16h16v16zm-12-4h8v-8h-8v8z"/></svg>
+                            .illustratorLogo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 89.658 87.016"><linearGradient id="ilstr" gradientUnits="userSpaceOnUse" x1=".661" y1="-.661" x2="88.998" y2="87.677"><stop offset="0" stop-color="#5F4522"/><stop offset="1" stop-color="#373316"/></linearGradient><path opacity=".95" fill="url(#ilstr)" d="M0 0h89.658v87.016H0z"/><path fill="#010101" d="M31.547 52.583L28.09 63.968h-7.57l12.874-40.17h9.357l13.053 40.17h-7.866L44.3 52.583H31.548zm11.503-5.54l-3.16-9.895c-.773-2.443-1.43-5.186-2.025-7.51h-.12c-.596 2.324-1.19 5.125-1.907 7.51l-3.098 9.894h10.31z" opacity=".1"/><linearGradient id="ilstrb" gradientUnits="userSpaceOnUse" x1="19.823" y1="42.557" x2="65.871" y2="42.557"><stop offset="0" stop-color="#FDC560"/><stop offset="1" stop-color="#F99C1C"/></linearGradient><path fill="url(#ilstrb)" d="M31.547 51.258L28.09 62.643h-7.57l12.874-40.17h9.357l13.053 40.17h-7.866L44.3 51.258H31.548zm11.503-5.542l-3.16-9.894c-.773-2.443-1.43-5.186-2.025-7.51h-.12c-.596 2.324-1.19 5.125-1.907 7.51l-3.098 9.894h10.31z"/><path fill="#010101" d="M66.47 26.837c0 2.206-1.608 3.934-4.17 3.934-2.445 0-4.055-1.727-4.055-3.933 0-2.265 1.67-3.994 4.112-3.994 2.504 0 4.053 1.73 4.114 3.994zm-7.808 37.13V34.943h7.39v29.026h-7.39z" opacity=".1"/><linearGradient id="ilstrc" gradientUnits="userSpaceOnUse" x1="19.817" y1="42.081" x2="65.873" y2="42.081"><stop offset="0" stop-color="#FDC560"/><stop offset="1" stop-color="#F99C1C"/></linearGradient><path fill="url(#ilstrc)" d="M66.47 25.512c0 2.206-1.608 3.934-4.17 3.934-2.445 0-4.055-1.728-4.055-3.934 0-2.265 1.67-3.994 4.112-3.994 2.504 0 4.053 1.73 4.114 3.994zm-7.808 37.13V33.618h7.39v29.026h-7.39z"/></svg>s
+            div.section
+                .skills
+                    .shadeIn
+                    .container
+                        h1 Skills
+                        ul
+                            li
+                                |semantic
+                                mark  html5
+                                |  with
+                                mark jade
+                                |  templating
+                            li
+                                mark  bem
+                                |  organized
+                                mark  css3/scss
+                            li
+                                mark jQuery
+                                |  and
+                                mark  javascript
+                            li
+                                |tasks runing with
+                                mark  gulp
+                            li
+                                mark svg
+                                |  graphics
+                            li
+                                mark  responsive web
+                                |  + grid layouts
+                            li
+                                mark image
+                                |  editing & optimisation
+
+                            li
+                                mark  cross-browser
+                                |  compatibility
+                            li
+                                | version controling with
+                                mark  git
+                            li
+                                mark personal responsibility!
+            div.section
+                .about
+                    .shadeIn
+                    .container
+                        h1 What else?
+                        p From the blank browsers web page till the final tag and ";" in javascript - <b>I do it, because I like it :)</b>
+                            | You can read my clients feedbacks at
+                            a(href="https://www.odesk.com/users/~01e8d59e4de965c467" target="_blank")  oDesk
+                            |,
+                            |  take a look at my
+                            a(href="portfolio")  portfolio
+                            |, or drop me a line, so I can
+                            a(href="contact")  contact you
+                            |.
+
+
+        script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
+        script(src='js/main.js')

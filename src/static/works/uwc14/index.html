@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Sasha Yushchak">
+        <meta name="description" content="uawebchallenge.com">
+        <meta name="keywords" content="html5, css3, javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Focal Point</title>
+        
+        <!-- favicon.ico and touchIco for apple -->
+        <link rel="apple-touch-icon" href="touchicon-152.png">
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- favicon.ico for IE10 win -->
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="path/to/tileicon-144.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/main.js"></script>
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+          <link href="css/ie.css" rel="stylesheet">
+        <![endif]-->
+        <noscript>
+          <link href="css/noscrpt.css" rel="stylesheet" type="text/css">
+            <div class="noJsAlert">
+              <h1>Please enable JavaScript in your browser to use the website.</h1>
+            </div>
+        </noscript>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Page header with blocks: login, register, marketing -->
+        <section class="topHead">
+            <nav class="headLine">
+                <div class="container">
+                    <div class="headLine-logo">
+                        <img src="img/mainLogo.png" alt="Focal Point Logotype">
+                    </div>
+                    <div class="headLine-ctrl">
+                        <a href="#" class="blogEnter transitionFast"><span></span>Blog</a>
+                        <a href="#" class="loginEnter transitionFast login"><span></span>Login</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Internal head part with different state blocks -->
+            <div class="headBar container">
+                <div class="onLoad">
+                    <header>
+                        <h1>Everything you need to run your business.</h1>
+                        <h2>We want to make life easier for small businesses.</h2>
+                        <img src="img/mobPad.png" alt="">
+                    </header>
+                    <img src="img/girl.png" alt="" class="onLoad-girl">
+                    <div class="contacts">
+                        <a href="#" class="onLoad-web transition"><span></span>Web Site</a>
+                        <a href="#" class="onLoad-phn transition"><span></span>Phone</a>
+                        <a href="#" class="onLoad-eml transition"><span></span>E-mail</a>
+                        <a href="#" class="onLoad-cnt transition"><span></span>Contacts</a>
+                        <a href="#" class="onLoad-app transition "><span></span>Appointments</a>
+                    </div>
+                    <form action="register.php" id="regForm" method="post"><!-- id is used for JS only -->
+                        <input type="name" name="name" placeholder="Name" maxlength="30" autofocus>
+                        <input type="email" name="email" placeholder="Email address" maxlength="50">
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit" name="formSubmit" value="Submit">
+                            <b>Start</b> 14 days free trial <b>now</b> <span></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="social">
+                    <header>
+                        <h1>Soonish you will recieve email for confirmation.</h1>
+                        <h2>Meanwhile you can share the service with your firends…</h2>
+                    </header>
+                    <img src="img/thankYou.png" alt="" class="thankYou">
+                    <div class="links">
+                        <a href="#socialLink" class="links-face transitionSlow"><span></span></a>
+                        <a href="#socialLink" class="links-twit transitionSlow"><span></span></a>
+                        <a href="#socialLink" class="links-liIn transitionSlow"><span></span></a>
+                        <a href="#socialLink" class="links-thum transitionSlow"><span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- END of internal head part with different state blocks -->
+        </section>
+        <!-- End of header -->
+        <!-- Login link notifier - out of header to use header background separetly-->
+        <section class="loginLink container">
+            Already have an account?       
+            <a href="#" class="login"><span></span>Login here.</a>
+        </section>
+        <!-- END of Login link notifier -->
+        <!-- Services block -->
+        <section class="services container">
+            <header class="headerTitle">
+                <div>
+                    <h1>Your business needs to make money.</h1>
+                    <a title="Web DEV is cool )) " class="servTip" href="#FAQ">
+                        <img src="img/ico/serviceTip.jpg" alt="tollTip icon">
+                    </a>
+                </div>
+                <h2>Not spend time on setting up web site and mailboxes.</h2>
+            </header>
+            <div class="servInfoWrap">
+                <div class="servInfo col-sm-12 col-md-6">
+                    <div class="servIcoWrap">
+                        <span class="servInfo-ico icoProfile"></span>
+                    </div>
+                    <div class="servInfo-desc">
+                        <strong>Profile</strong>
+                        <b>Business name, address, services.</b>
+                        <p>
+                            It’s just the basic information about your business - what’s you name, what you do, where you are.
+                        </p>
+                    </div>
+                </div>
+                <div class="servInfo col-sm-12 col-md-6">
+                    <div class="servIcoWrap">
+                        <span class="servInfo-ico icoEmail"></span>
+                    </div>
+                    <div class="servInfo-desc">
+                        <strong>E-mail</strong>
+                        <b>Professional grade communication</b>
+                        <p>
+                            Our intelligent e-mail system tracks entire context of customer interaction - e-mails, phone calls, appointments, visit notes.
+                        </p>
+                    </div>
+                </div>
+                <div class="servInfo col-sm-12 col-md-6">
+                    <div class="servIcoWrap">
+                        <span class="servInfo-ico icoWeb"></span>
+                    </div>
+                    <div class="servInfo-desc">
+                        <strong>Website</strong>
+                        <b>How the world sees you.</b>
+                        <p>
+                            Get rid of cluttered inbox? Forget that. Email addresse for everyone in your team. Message mean action.
+                        </p>
+                    </div>
+                </div>
+                <div class="servInfo col-sm-12 col-md-6">
+                    <div class="servIcoWrap">
+                        <span class="servInfo-ico icoApp"></span>
+                    </div>
+                    <div class="servInfo-desc">
+                        <strong>Appointments</strong>
+                        <b>We are all on the clock.</b>
+                        <p>
+                            We make scheduling multi-sessions, classes and events really easy for you and your clients. And we won’t let them forget either.
+                        </p>
+                    </div>
+                </div>
+                <div class="servInfo col-sm-12 col-md-6">
+                    <div class="servIcoWrap">
+                        <span class="servInfo-ico icoPhone"></span>
+                    </div>
+                    <div class="servInfo-desc">
+                        <strong>Phone</strong>
+                        <b>Essential business tool.</b>
+                        <p>
+                            We give you a phone number for your clients to call, be transferred to a cell or leave messages. With extensions and voice mail for every employee.
+                        </p>
+                    </div>
+                </div>
+                <div class="servInfo col-sm-12 col-md-6">
+                    <div class="servIcoWrap">
+                        <span class="servInfo-ico icoCont"></span>
+                    </div>
+                    <div class="servInfo-desc">
+                        <strong>Contacts</strong>
+                        <b>Clients, staff, vendors.</b>
+                        <p>
+                            We track all the activities associated with any person you have in your address book and keep your notes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="services-alert">You will eventually need more apps. We have plenty in our Marketplace. And they are all seamlessly integrated.</p>
+        </section>
+        <!-- END of services block -->
+        <!-- Advertisment block    -->
+        <aside class="slogan">
+            <header class="headerTitle">
+                <div>
+                    <h1>We love helping small businesses.</h1>
+                    <a title="I like uawebchallenge" class="servTip" href="http://uawebchallenge.com/">
+                        <img src="img/ico/advTip.jpg" alt="tollTip icon">
+                    </a>
+                </div>
+                <h2>Help us help you - the sooner the better.</h2>
+            </header>
+        </aside>
+        <!-- END of dvertisment block -->
+        <!-- Advertisment block    -->
+        <section class="advert">
+            <div class="advContainer">
+                <h1>Start your free, no-risk, 14 day trial.</h1>
+                    <div class="btnWrap" id="registerNow">
+                        <button type="button">Get started now</button>
+                    </div>
+            </div>
+        </section>
+        <!-- END of dvertisment block -->
+        <footer>
+            <div class="container">
+                <p>&#169;  2012-2013 Focal Point</p>
+                <nav>
+                    <a href="">Terms of Service</a>
+                    <a href="">Privacy</a>
+                    <a href="">Sitemap</a>
+                </nav>
+            </div>
+        </footer>
+        <!-- popUp for login -->
+        <aside class="popUp">
+            <div class="loginPopUp">
+                <div class="loginPopUp-input">
+                    <form action="#">
+                        <div class="logEmail">
+                            <input type="email" placeholder="Email address">
+                            <a href="#" class="passReset">Forgot password?</a>
+                        </div>
+                        <div class="logPass">
+                            <input type="password" placeholder="Password">
+                            <a href="#" class="loginSubmit">Login <span></span></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="loginPopUp-face">
+                    <div class="faceConnect transitionFast"><!-- to activate facebook API -->
+                        <img src="img/ico/fbConnect.png" alt="connect with facebook">
+                        Connect with Facebook <span></span>
+                    </div>
+                </div>
+                <div class="recoverPass">
+                    <div class="loginPopUp-input">
+                        <form action="#">
+                            <div class="logEmail">
+                                <input type="email" placeholder="Email address">
+                                <a href="#" class="passResetSend">Reset password!</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- END of popUp for login -->
+    </body>
+</html>

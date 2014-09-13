@@ -1,0 +1,167 @@
+
+/* pre loader */
+.preLoader{
+  padding: 1em;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: right;
+  h1 {
+    margin: 1em auto;
+//    border-bottom: 1px solid;
+    font-weight: lighter;
+    width: 70%;
+    padding: 0 0 .6em 0;
+    position: relative;
+  }
+  ul {
+    position: absolute;
+    left: 52%;
+    top: 70%;
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+
+  li {
+    list-style-type: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background: #dd7a14;
+    border-radius: 50%;
+    animation-direction:reverse;
+  }
+
+  @mixin place($n, $t, $l) {
+    animation: $n 700ms ease-in-out infinite;
+    top: $t;
+    left: $l;
+  }
+
+  .noAnimation{
+    animation: none!important;
+  }
+
+  #a {
+    @include place(a, -40px, -40px);
+  }
+
+  #b {
+    @include place(b, -40px, 0px);
+  }
+
+  #c {
+    @include place(c, -40px, 40px);
+  }
+
+  #d {
+    @include place(d, 0px, -40px);
+  }
+
+  #e {
+    @include place(e, 0px, 0px);
+  }
+
+  #f {
+    @include place(f, 0px, 40px);
+  }
+
+  #g {
+    @include place(g, 40px, -40px);
+  }
+
+  #h {
+    @include place(h, 40px, 0px);
+  }
+
+  #i {
+    @include place(i, 40px, 40px);
+  }
+}
+
+@keyframes a {
+  50% {
+    top: 0px;
+    left: -40px;
+  }
+  100% {
+    top: 0px;
+    left: -40px;
+  }
+}
+@keyframes b {
+  50% {
+    top: -40px;
+    left: -40px;
+  }
+  100% {
+    top: -40px;
+    left: -40px;
+  }
+}
+@keyframes c {
+  50% {
+    top: -40px;
+    left: 0px;
+  }
+  100% {
+    top: -40px;
+    left: 0px;
+  }
+}
+@keyframes d {
+  50% {
+    top: 40px;
+    left: -40px;
+  }
+  100% {
+    top: 40px;
+    left: -40px;
+  }
+}
+@keyframes f {
+  50% {
+    top: -40px;
+    left: 40px;
+  }
+  100% {
+    top: -40px;
+    left: 40px;
+  }
+}
+@keyframes g {
+  50% {
+    top: 40px;
+    left: 0px;
+  }
+  100% {
+    top: 40px;
+    left: 0px;
+  }
+}
+@keyframes h {
+  50% {
+    top: 40px;
+    left: 40px;
+  }
+  100% {
+    top: 40px;
+    left: 40px;
+  }
+}
+@keyframes i {
+  50% {
+    top: 0px;
+    left: 40px;
+  }
+  100% {
+    top: 0px;
+    left: 40px;
+  }
+}
