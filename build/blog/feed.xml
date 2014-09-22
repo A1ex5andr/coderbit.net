@@ -5,16 +5,31 @@
     <atom:link href="http://coderbit.net/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://coderbit.net/blog/</link>
     <description>developing web is like writing poetry :)</description>
-    <pubDate>Mon, 01 Sep 2014 03:00:00 +0300</pubDate>
+    <pubDate>Thu, 18 Sep 2014 03:00:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>minimal-ui is removed from iOS 8</title>
+      <link>http://coderbit.net/blog/articles/No%20more%20minimal-ui%20in%20iOS/</link>
+      <pubDate>Thu, 18 Sep 2014 03:00:00 +0300</pubDate>
+      <guid isPermaLink="true">http://coderbit.net/blog/articles/No%20more%20minimal-ui%20in%20iOS/</guid>
+      <author></author>
+      <description>&lt;h1 id=&quot;the-minimal-ui-viewport-property-is-no-longer-supported-in-ios-8&quot;&gt;The minimal-ui viewport property is no longer supported in iOS 8&lt;/h1&gt;
+&lt;p&gt;And I have to say that’s kinda sad. I really liked the behaviour of the &lt;code&gt;minimal-ui&lt;/code&gt; property. Now its &lt;a href=&quot;https://developer.apple.com/library/ios/releasenotes/General/RN-iOSSDK-8.0/&quot;&gt;final&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It made landscape mode of browsing look so much cleaner. Especially when you work with a &lt;code&gt;100vh&lt;/code&gt; sections, so you don’t see browsers address bar on top, all the time. &lt;/p&gt;
+&lt;p&gt;Well, maybe there will be a &lt;strong&gt;better decision&lt;/strong&gt; instead, soon :)&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>First Post</title>
       <link>http://coderbit.net/blog/articles/hello-world/</link>
       <pubDate>Mon, 01 Sep 2014 03:00:00 +0300</pubDate>
       <guid isPermaLink="true">http://coderbit.net/blog/articles/hello-world/</guid>
       <author></author>
-      <description>&lt;p&gt;Hi, my name is Alexander and this is my &lt;code&gt;&amp;lt;hello world&amp;gt;&lt;/code&gt; blog post.&lt;/p&gt;
+      <description>&lt;h1 id=&quot;hi-my-name-is-alexander-and-this-is-my-hello-world-blog-post-&quot;&gt;Hi, my name is Alexander and this is my &lt;code&gt;&amp;lt;hello world&amp;gt;&lt;/code&gt; blog post.&lt;/h1&gt;
+&lt;p&gt;I have a lot of interesting notes and code snippets from a frontend side, so I decided to have a place where I can gather them, including interesting news and events.&lt;/p&gt;
+&lt;p&gt;Hope you also may find something interesting for you here :)
+&lt;strong&gt;If you want to ask something or have a suggestion, simply &lt;a href=&quot;http://coderbit.net/contact.html&quot; title=&quot;contacts&quot;&gt;contact me&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
   </channel>

@@ -117,7 +117,7 @@
     overflow: hidden;
     float: right;
     width: auto;
-    margin-top: 10px;
+//    margin-top: 10px;
     .fa {
       margin-left: -20px;
       visibility: hidden;
@@ -128,12 +128,16 @@
     li {
       min-width: 100px;
       width: auto;
+      &hover{
+        background: rgba(228, 1, 0, 0.22);
+      }
     }
     a {
       margin: 0;
       text-align: center;
       &:hover {
-//        background: $white+-20;
+        background: #FFF;
+        background: rgba(255, 255, 255, 0.55);
       }
     }
   }
@@ -183,7 +187,6 @@
     width: 100%;
     top: 0;
     left: 0;
-    top: 10px;
   }
   &.active::before {
     font-size: 24px;

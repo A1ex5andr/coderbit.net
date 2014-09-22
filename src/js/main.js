@@ -1,11 +1,12 @@
 // var sayHello = require('./say-hello');// example of Browserify require
 
 $(window).load( function () {
+
     // DEVELOPMENT
-    //    $('.popUp').fadeOut(1); // destroy pop up div
-    //    runAnimation(); // first slide animation start
+    //    $('.popUp').fadeOut(); // destroy pop up div
+        //runAnimation(); // first slide animation start
     // PRODUCTION
-    setTimeout (popUp, 2000);
+    setTimeout (popUp, 1600);
     function popUp(){
     // blow away each spinner ball
     $(function() {
@@ -14,23 +15,23 @@ $(window).load( function () {
             $(this).addClass('noAnimation');
             $(this).delay(200*i).animate({
                 opacity: 0,
-                top: '-=300'
-            }, 150, 'linear' );
+                top: '-=600'
+            }, 200, 'linear' );
         });
     });
     // hide loading text
     $('.preLoader h1').animate({
             opacity: 0,
-            left: '-=500'
+            left: '-=1000'
         }, 2000, function(){
             $('.popUp').fadeOut(500); // destroy pop up div
             runAnimation(); // first slide animation start
         });
     }
+
 });
 
-$(document).ready(function() {
-
+$(document).ready(function(data) {
     // sayHello();// example of Browserify require
 
     // navigation MAIN MENU
@@ -40,69 +41,15 @@ $(document).ready(function() {
         closeOnNavClick: false
     });
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            /* If the object is completely visible in the window, fade it in */
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},500);
-            }
-        });
+
+    // smooth page changes
+    $('#slideBlocks, .enterAnimation').fadeIn(500);
+    $(".top-logo, #navigation  a").click(function () {
+        event.preventDefault();
+        newLocation = this.href;
+        $('#slideBlocks, .enterAnimation').fadeOut(500, newpage);
     });
-
-    //initialize full screen pages
-    $('#slideBlocks').fullpage({
-        verticalCentered: false,
-        resize: false,
-        sectionsColor : [],
-        anchors:['wellcome', 'web', 'design', 'skills', 'about' ],
-        scrollingSpeed: 300,
-        easing: 'easeInQuart',
-        menu: false,
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: [],
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
-        loopBottom: false,
-        loopTop: false,
-        loopHorizontal: false,
-        autoScrolling: true,
-        scrollOverflow: false,
-        css3: true,
-        paddingTop: '0',
-        paddingBottom: '0',
-        normalScrollElements: '#element1, .element2',
-        normalScrollElementTouchThreshold: 5,
-        keyboardScrolling: true,
-        touchSensitivity: 10,
-        continuousVertical: false,
-        animateAnchor: true,
-        sectionSelector: '.section',
-        slideSelector: '.slide',
-
-        //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
-    })
-
-    // fix ios bug with landscape mode
-    var buggyIOS = /\b(?:iPhone|iPod|iPad).*?\bOS 7/.test(window.navigator.userAgent);
-    if (buggyIOS) {
-        //alert('buggyIOS');
-        $(window).on('orientationchange', function () {
-            window.scrollTo(0, 0);
-        });
-    }
-
-
+    function newpage() { window.location = newLocation;}
 
     // DEBUG / / / / / / / / / / / / / / / / / / / / / /
     // ORIENTATION DETECTION
@@ -111,7 +58,7 @@ $(document).ready(function() {
     //    if (window.orientation == 90){
     //        //alert($(window).width());
     //    }else{
-    //        //alert($(window).width());
+    //        //alert($(window).width());ы
     //    }
     //});
 
@@ -129,3 +76,10 @@ $(document).ready(function() {
     //div.tag         }
     //div.tag     }
 });
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-44277096-1', 'auto');
+ga('send', 'pageview');
