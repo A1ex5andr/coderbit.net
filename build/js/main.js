@@ -622,7 +622,7 @@ $(document).ready(function(data) {
 
     // smooth page changes
     $('#slideBlocks, .enterAnimation').fadeIn(500);
-    $(".top-logo, #navigation  a").click(function () {
+    $(".top-logo, #navigation  a, .slowMoLink").click(function () {
         event.preventDefault();
         newLocation = this.href;
         $('#slideBlocks, .enterAnimation').fadeOut(500, newpage);

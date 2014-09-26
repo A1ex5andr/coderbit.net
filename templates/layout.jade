@@ -8,29 +8,30 @@ html
         meta(name='author' content='Coderbit')
         meta(name="description" content="Coderbit - front-end developer.")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
-        title CODERBIT - Blog about html, css, javascript, web development and design
+        title Coderbit - blog about front-end web development and design
         link(href=locals.url+'/css/main.css', rel='stylesheet')
     body(class=bodyclass)
         .enterAnimation
-            header.top
-                div.container
-                    a(href='http://coderbit.net/').top-logo Coderbit
-                    nav#navigation.nav-collapse
-                        ul
-                            li
-                                a(href='http://coderbit.net/blog')
-                                    | Blog
-                            li
-                                a(href='http://coderbit.net/portfolio.html')
-                                    | Portfolio
-                            li
-                                a(href='http://coderbit.net/contact.html')
-                                    | Contacts
-            div#content.blogpost
-                div.content-wrap
-                    block content
-                        h2 Welcome to zombocom!
-
+            .wrapper
+                header.top
+                    div.container
+                        a(href='http://coderbit.net/').top-logo Coderbit
+                        nav#navigation.nav-collapse
+                            ul
+                                li
+                                    a(href='http://coderbit.net/blog')
+                                        | Blog
+                                li
+                                    a(href='http://coderbit.net/portfolio.html')
+                                        | Portfolio
+                                li
+                                    a(href='http://coderbit.net/contact.html')
+                                        | Contacts
+                div#content.blogpost
+                    div.content-wrap
+                        block content
+                            h2 Welcome to zombocom!
+                .push
             footer
                 h5 &#169; Alexander YUshchak | FrontEnd Web Development
             //footer
@@ -42,6 +43,7 @@ html
             //                p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
             //                    a(href='https://github.com/jnordberg/wintersmith') Wintersmith
             //                    //- please leave the "powered by" if you use the design
-        script(src="https://code.jquery.com/jquery-2.1.1.min.js")
-        <script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>
+        script(src="http://coderbit.net/js/jquery.min.js")
+        //script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+        //<script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>
         script(src='http://coderbit.net/js/main.js')

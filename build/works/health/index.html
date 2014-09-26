@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Alexander Yushchak > Coderbit.net">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+        <title>Health First webpage</title>
+        <link href="css/select2.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/select2.js"></script>
+        <script src="js/main.js"></script>
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+          <link href="css/ie.css" rel="stylesheet">
+        <![endif]-->
+    </head>
+    <body>
+
+    <div class="wrapper">
+
+        <!-- START of pageHead -->
+        <header class="pageHead">
+            <div class="greenLine"></div>
+            <div class="container">
+                <img src="img/logo.png" alt="" class="mainLogo">
+            </div>
+        </header>
+        <!-- END of pageHead -->
+
+        <!-- START of banner -->
+        <section class="container">
+            <div class="bannerAd">
+                <h1>Sales Checks Tracking</h1>
+            </div>
+        </section>
+        <!-- END of banner -->
+
+        <!-- START of mainForm -->
+        <section class="mainForm">
+            <form action="form.php" method="post" id="checksForm">
+
+                <div class="mainForm-white container"><!-- white part -->
+                    <div class="col-md-6 padRight">
+                        <div class="col-md-12">
+                            <label for="hoh">HOH &#42;</label>
+                            <input class="reqInput" type="text" name="hoh" id="hoh" placeholder="" autofocus>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="memId">HIX &#124; PEAP &#124; Member ID Number</label>
+                            <input type="text" name="memId" id="memId" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 padLeft">
+                        <div class="col-md-6 padRight">
+                            <label for="order">Check or Money Order &#35; &#42;</label>
+                            <input class="reqInput" type="text" name="order" id="order" placeholder="">
+                        </div>
+                        <div class="col-md-6 padLeft">
+                            <label for="amount">Check Amount &#42;</label>
+                            <input class="reqInput" type="text" name="amount" id="amount" placeholder="">
+                        </div>
+                        <div class="col-md-12 formCheck">
+                            <span>Binder Payment</span>
+                            <input type="checkbox" name="bind" id="bind">
+                            <label for="bind" class="bind"></label>
+                        </div>
+                    </div>
+                </div><!-- end of white part -->
+
+                <div class="mainForm-gray"><div class="container"><!-- gray part -->
+                    <div class="col-md-6 padRight">
+                        <div class="col-md-12">
+                            <label for="manager">Manager Name &#42;</label>
+                            <input class="reqInput" type="text" name="manager" id="manager" placeholder="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="biz">Line of Business</label>
+                               <select name="biz" id="e1">
+                                <option value="html5">html5</option>
+                                <option value="css3">css3</option>
+                                <option value="jQuery">jQuery</option>
+                                <option value="javaScript">javaScript</option>
+                                <option value="php">php</option>
+                                <option value="mySql">mySql</option>
+                                <option value="ui/ux">ui/ux</option>
+                               </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 padLeft">
+                        <div class="col-md-12">
+                            <label for="repId">Rep ID Number &#42;</label>
+                            <input class="reqInput" type="text" name="repId" id="repId" placeholder="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="notes">Notes</label>
+                            <textarea name="notes" id="notes" ></textarea>
+                        </div>
+                    </div>
+                </div></div><!-- end of gray part -->
+
+                <div class="mainForm-end container">
+                    <div class="col-md-6">
+                        <p>&#42; Required Field</p>
+                    </div>
+                    <div class="col-md-6 submitFrom">
+                        <button type="submit" name="formSubmit" value="Submit">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+        <!-- END of mainForm -->
+
+
+        <div class="push"></div>
+    </div>
+
+        <!-- START of pageFoot -->
+        <footer class="pageFoot">
+            <div class="greenLine"></div>
+            <div class="container pageFoot-links">
+                <h4>&#169;2014 Healthfirst</h4>
+                <span class="privacy">
+                    <a href="#">Web Privacy Statement</a>
+                    <span class="privacySplit">&#124;</span>
+                    <a href="#">Privacy Notices</a>
+                </span>
+            </div>
+        </footer>
+        <!-- END of pageFoot -->
+
+    <body>
+</html>

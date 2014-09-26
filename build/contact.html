@@ -6,27 +6,49 @@
     <meta name="author" content="Coderbit">
     <meta name="description" content="Coderbit - front-end developer.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CODERBIT - Portfolio</title>
+    <title>Coderbit - send message</title>
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
     <div class="enterAnimation">
-      <header class="top">
-        <div class="container"><a href="http://coderbit.net/" class="top-logo">Coderbit</a>
-          <nav id="navigation" class="nav-collapse">
-            <ul>
-              <li><a href="http://coderbit.net/blog">Blog</a></li>
-              <li><a href="http://coderbit.net/portfolio.html">Portfolio</a></li>
-              <li><a href="http://coderbit.net/contact.html">Contacts</a></li>
-            </ul>
-          </nav>
+      <div class="wrapper">
+        <header class="top">
+          <div class="container"><a href="http://coderbit.net/" class="top-logo">Coderbit</a>
+            <nav id="navigation" class="nav-collapse">
+              <ul>
+                <li><a href="http://coderbit.net/blog">Blog</a></li>
+                <li><a href="http://coderbit.net/portfolio.html">Portfolio</a></li>
+                <li><a href="http://coderbit.net/contact.html">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="container">
+          <form id="checkForm" action="send.php" method="post" onkeypress="return event.keyCode != 13;" class="contactMe">
+            <div class="input-name">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" placeholder="" autofocus="" class="reqInput">
+            </div>
+            <div class="input-mail">
+              <label for="mail">E-mail</label>
+              <input type="text" name="mail" placeholder="" class="reqInput">
+            </div>
+            <div class="input-text">
+              <label for="message">Message</label>
+              <textarea name="message" type="text" class="reqInput"></textarea>
+            </div>
+            <button type="submit">SEND</button>
+          </form>
         </div>
-      </header>
+        <div class="push"></div>
+      </div>
       <footer>
         <h5>&#169; Alexander YUshchak | FrontEnd Web Development</h5>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script><script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>
+    <script src="http://coderbit.net/js/jquery.min.js"></script>
+    <!--script(src="https://code.jquery.com/jquery-2.1.1.min.js")-->
+    <!--<script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>-->
     <script src="http://coderbit.net/js/main.js"></script>
   </body>
 </html>

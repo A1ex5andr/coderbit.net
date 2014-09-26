@@ -1,0 +1,64 @@
+.s-01, .s-01_h, .s-02, .s-02_h, .s-03, .s-03_h, .s-04, .s-04_h, .s-05, .s-05_h{
+	background: url(sprites.png) no-repeat;
+}
+
+.s-01{
+	background-position: -49.00001525878906px -0.00000762939453125px ;
+	width: 21px;
+	height: 20px;
+}
+
+.s-01_h{
+	background-position: 0 0;
+	width: 21px;
+	height: 20px;
+}
+
+.s-02{
+	background-position: -49px -48.00000762939453px ;
+	width: 23px;
+	height: 17px;
+}
+
+.s-02_h{
+	background-position: -2.0000152587890625px -48.00000762939453px ;
+	width: 23px;
+	height: 17px;
+}
+
+.s-03{
+	background-position: -50.000030517578125px -94px ;
+	width: 19px;
+	height: 19px;
+}
+
+.s-03_h{
+	background-position: -3px -94.00000762939453px ;
+	width: 19px;
+	height: 19px;
+}
+
+.s-04{
+	background-position: -50px -142px ;
+	width: 23px;
+	height: 23px;
+}
+
+.s-04_h{
+	background-position: 0 -143.00000762939453px ;
+	width: 23px;
+	height: 23px;
+}
+
+.s-05{
+	background-position: -52px -192.00000762939453px ;
+	width: 18px;
+	height: 18px;
+}
+
+.s-05_h{
+	background-position: -2px -193.00000762939453px ;
+	width: 18px;
+	height: 18px;
+}
+

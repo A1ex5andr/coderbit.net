@@ -1,0 +1,76 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+        meta(name='author' content='Coderbit')
+        meta(name="description" content="Coderbit - front-end developer.")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title Coderbit - Portfolio
+        link(href='css/main.css', rel='stylesheet')
+    body
+        .enterAnimation
+            .wrapper
+                include layout/header.jade
+                .container.portfolio
+                    .portfolio-item
+                        img(src="img/400.jpg", width="400", srcset="img/600.jpg 1.5x, img/800.jpg 2x, img/1200.jpg 3x")
+
+
+                    //-.main
+                       ul#og-grid.og-grid
+                            li
+                                a(href="http://ethnocase.com", data-largesrc="img/portfolio/ethnocase.jpg", data-title="Internet Shop For Ethnocase Company", data-description="This is a new version of the original site, rebuild and redesigned completely from a scratch. Frontend made by me with html5 / css3 / js, automated with compass / susy and scss. Backend coded by Alexander Butyuhin with php / mysql and medoo framework. Shop is multilingual and multi currency with custom made cms.")
+                                    img(src="img/portfolio/thumbs/ethnocase.jpg", alt="frontend web development example ethnocase")
+
+                            li
+                                a(href="http://ekonomim.net/", data-largesrc="img/portfolio/ekonomim.jpg", data-title="Wordpress Web Site On How To Economize ", data-description="My tasks were to install the latest wordpress engine and set it up with the theme the client has chosen. Css customizations where made with wordpress child theme. Site is still under content filling and testing. ")
+                                    img(src="img/portfolio/thumbs/ekonomim.jpg", alt="frontend web development example ekonomim")
+
+                            li
+                                a(href="http://iqfriends.com/", data-largesrc="img/portfolio/iq.jpg", data-title="Logic Games With Social Integration", data-description="I received an invitation to work on IQ friends website in March 2014 and I liked the concept of the project a lot. To make it responsive and to have a possibility to customize it by the team participants on their own later, I was told to use bootstrap library as main html/css constructor. Though the web is still under backend development, the site is already functioning.")
+                                    //- My front end part took a bit longer than I assumed at the beginning, because of internal misunderstandings in the company owners, but on Jul 2014 I passed all of my files to the team and finished my part in the project. Main page is still under companies development.
+                                    img(src="img/portfolio/thumbs/iq.jpg", alt="frontend web development example iq")
+
+                            li
+                                a(href="http://coderbit.net/works/uwc14/", data-largesrc="img/portfolio/uwc.jpg", data-title="Competitive Work for UWC", data-description="This is my work to participate in the Ukraine web challenge championship 2014. The main goal was to create a registration form, after which user always sees another index page (if registered). To make this I wrote a JS which creates a cookie to store and identify user. To send a mail to user after registration I used a php script. For animations I've coded js and some css3 transitions. After all I passed to semi-final, in senior category, that was a great pleasure to me. ")
+                                    img(src="img/portfolio/thumbs/uwc.jpg", alt="frontend web development example uwc")
+
+                            li
+                                a(href="http://qtrade.com.ua/beta/", data-largesrc="img/portfolio/qtrade.jpg", data-title="Bearing Trade Market Web Site Rebuild And Redesign", data-description="Main page of the site is heavily loaded with big amount of text. That was the reason why few previous redesigns weren't the best way to go, though they were making bigger WOW effect. This version looks much cleaner and is more acceptable form UX/UI point of view, considering that people come to this site not only once but from time to time to post their messages. It's build with bootstrap to let different programmers take part in future development of the project. ")
+                                    img(src="img/portfolio/thumbs/qtrade.jpg", alt="frontend web development example qtrade")
+
+                            li
+                                a(href="http://www.tvuna.co.il/", data-largesrc="img/portfolio/tvuna.jpg", data-title="Web portal for digital agency", data-description="My main tasks were to bring into life a bunch of psd pages, responsive and working in ie8. Have to admit, that `rtl` was kinda unusual. On this project I had to use both css and js transitions with html5. Two sliders per page wasn't a hard task. While developing for modern browsers, ie8 was a thing to consider in mind all the time. But with graceful degradation and shiv everything is possible. Though I finished my part of job in Jan of 2014, project is still under backend construction.")
+                                    img(src="img/portfolio/thumbs/tvuna.jpg", alt="frontend web development example tvuna")
+
+                            li
+                                a(href="http://coderbit.net/works/partyzan/", data-largesrc="img/portfolio/partyzan.jpg", data-title="Web Site For PaRtyzan Studio", data-description="This simple website was made as redesign for the PaRtyzan PR company. To build it I used slider with css3 transitions. Design was made by the company itself. Customer wanted to code layout without using of any js libraries, but I'm suggesting to build similar grid layouts with Masonry library. It's fast, neat and easy customizable. Anyway, flat design and square blocks always look nice.")
+                                    img(src="img/portfolio/thumbs/partyzan.jpg", alt="frontend web development example partyzan")
+
+                            li
+                                a(href="http://coderbit.net/works/health/", data-largesrc="img/portfolio/health.jpg", data-title="Php Form For Data Sending", data-description="I needed to create a special form of different input types, which would be responsive and fast. To send all data via email I used PHP script. No data verifying was asked, but in my works I use JS checks and highlighting, if field is empty, to work it in different browsers.")
+                                    img(src="img/portfolio/thumbs/health.jpg", alt="frontend web development example health")
+
+                            li
+                                a(href="http://coderbit.net/works/ivantage/", data-largesrc="img/portfolio/ivantage.jpg", data-title="Web Site For Ivantage Company", data-description="Web site should have only 2 resolutions but to work in ie8 as well. Site consists of about 20 pages and most of them consist of tables. I'm not a fan of ie and css hacks but this time a had to use them quite a lot. Afterwards, main task was to make it all works as it should in all browsers.")
+                                    img(src="img/portfolio/thumbs/ivantage.jpg", alt="frontend web development example ivantage")
+
+                            li
+                                a(href="http://coderbit.net/works/prodlink/", data-largesrc="img/portfolio/prodlink.jpg", data-title="Web Site For Banks Department", data-description="One page web application, for which I have to code html / css / js and add a slider. Something that makes the process of work a little bit harder is `rtl`. Though I liked to work on this project because of clean and good psd mockup. Ie8 was also a must ))")
+                                    img(src="img/portfolio/thumbs/prodlink.jpg", alt="frontend web development example prodlink")
+
+                            li
+                                a(href="http://coderbit.net/works/uptrade/", data-largesrc="img/portfolio/uptrade.jpg", data-title="Advertising Site With Contact Form", data-description="My task was to design and code a simple static web site where company may post it's news, product descriptions and so on. For contact form I used a php script. ")
+                                    img(src="img/portfolio/thumbs/uptrade.jpg", alt="frontend web development example uptrade")
+
+                // /container
+                .push
+            include layout/footer.jade
+        script(src="http://coderbit.net/js/jquery.min.js")
+        //script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+        //<script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>
+        script(src='http://coderbit.net/js/modernizr.js')
+        script(src="http://coderbit.net/js/portfolioGrid.js")
+        script(src='http://coderbit.net/js/main.js')
+

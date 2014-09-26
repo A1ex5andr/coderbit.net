@@ -1,0 +1,128 @@
+.wrapper{
+    width: 960px;
+    height: 38px;
+	margin-left: auto;
+    margin-right: auto;
+	background: #F2F2E9;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	-moz-box-shadow: rgba(0,0,0,0.4) 0 0 15px 5px;
+	-webkit-box-shadow: rgba(0,0,0,0.4) 0 0 15px 5px;
+	-o-box-shadow: rgba(0,0,0,0.4) 0 0 15px 5px;
+	box-shadow: rgba(0,0,0,0.4) 0 0 15px 5px;
+	/*height: auto !important;*/
+	/*min-height: 46px;
+	vertical-align: top;
+    z-index:1;*/
+}
+
+#cssmenu{ 
+    height:40px; 
+    display:block;  
+    padding:0; 
+    border-radius:0 0 16px 16px;
+} 
+
+#cssmenu img{
+    height:auto;
+    width:auto;
+    display:inline-block;
+    margin-top: -12px;
+    border: 0px;
+}
+
+#cssmenu > ul {
+margin:0;
+padding:0;
+}
+
+#cssmenu > ul > li {
+width:160px;
+list-style:inside none;
+float:left;
+display:block;
+position:relative;
+margin:0;
+padding:0;
+}
+
+#cssmenu > ul > li:first-child > a {
+border-radius:0 0 0 14px;
+}
+
+#cssmenu > ul > li:last-child > a {
+border-radius:0 0 14px 0;
+border-right: 0px;
+}
+
+#cssmenu > ul > li > a {
+height:10px;
+padding:14px 0;
+border-right: 1px solid #FFF;
+color:gray;
+outline:none;
+display:block;
+position:relative;
+font:bold 16px/100% Arial, Helvetica, sans;
+text-align:center;
+text-decoration:none;
+}
+
+#cssmenu ul > li > a:hover {
+/*text-shadow:1px 1px 3px black;*/
+color:white;
+background: #B0AEA0;
+font: bold;    
+z-index: ;
+}
+
+#cssmenu ul li ul li> a:hover {
+color:white;
+font: bold;    
+}
+
+#cssmenu ul li.has-sub:hover > ul,#cssmenu ul li.has-sub:hover > div {
+display:block;
+margin:0 -1px;
+padding:0;
+}
+
+#cssmenu ul li > ul, #cssmenu ul li > div {
+display:none;
+width:auto;
+position:absolute;
+top:38px;
+background: #877968;
+border-radius:0 0 6px 6px;
+border-color: 2px solid white;    
+z-index:999;
+padding:0;
+}
+
+#cssmenu ul li > ul {
+width:159px;
+position:absolute;
+border-left: 1px solid #FFF;
+border-right: 1px solid #FFF; 
+border-bottom: 1px solid #FFF; 
+}
+
+#cssmenu ul li > ul li {
+display:block;
+list-style:inside none;
+position:relative;
+margin:0;
+padding:3px;
+}
+
+#cssmenu ul li > ul li a {
+border-radius: 2px;  
+outline:none;
+display:block;
+position:relative;
+font: 10pt Arial, Helvetica, sans-serif;
+color:#D9D7C5;
+text-decoration:none;
+margin:0;
+padding:2px 4px;
+}

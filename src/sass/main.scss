@@ -5,12 +5,17 @@
 @import "includes/fullPage";
 @import "includes/blog";
 @import "includes/loader";
+@import "includes/portfolioGrid";
 
 
 /*                    **
 **   Default styles   **
 **                    */
 // ______________________________________________________________________________|
+html, body, .enterAnimation  {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -34,6 +39,9 @@ li {
 
 h1, h2, h3 {
     font-family: $fontMontserrat;
+}
+textarea {
+  resize:vertical;
 }
 .hideme
 {
@@ -278,18 +286,90 @@ h1, h2, h3 {
 
 /* portfolio */
 
+/* sticky footer */
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -38px;
+}
+
+footer, .push {
+  height: 37px;
+}
 
 /* footer */
 footer{
-  position: fixed;
-  bottom: 0;
+  border-top: 1px solid #CDCDCD;
+  background: #EFEFEF;
   text-align: center;
   width: 100%;
+  h5 {
+    margin: 10px;
+  }
+}
+
+/* contact form */
+.contactMe{
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+  input, textarea {
+    color: #626262;
+    background: #FFF;
+    font-family: "Open Sans", "Helvetica", "Arial";
+    font-size: 1.2em;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 10px auto 0;
+    display: block;
+    padding: 6px 10px;
+    box-shadow: inset 0px 1px 4px #D1D1D1;
+    &:focus{
+      outline: 0;
+      border: 1px solid #ff8420;
+    }
+  }
+  textarea {
+    min-height: 100px;
+  }
+  .input-name, .input-mail {
+    margin: 10px auto 10px;
+  }
+  button {
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background: #FFF;
+    display: block;
+    margin: 20px auto 0;
+    outline: none;
+    &::before {
+      content: '\2192';
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
 }
 
 //  320px ! ! ! ! FOR DEVELOPMENT ONLY
 // ______________________________________________________________________________|
-@media (max-width: 320px) { .container {  @include container(100%);  } }
+@media (max-width: 320px) { .container {  @include container(100%); } }
+
+@media (max-width: $mobile) {
+  .container {  @include container(100%); }
+  .example {
+    display: none!important;
+  }
+  footer {
+    h5 {
+      font-size: 10px;
+    }
+  }
+}
 
 //  from 768px to 959 ! ! ! !
 // ______________________________________________________________________________|
@@ -417,9 +497,13 @@ footer{
 // from 1200 - final maxWidth
 // ______________________________________________________________________________|
 @media (min-width: $large) {
-  //  .container {
-  //    @include container($large);
-  //  }
+    .container {
+//      @include container($large);
+      @include container($small);
+    }
+    .container.portGrid {
+      @include container($large);
+    }
   .web,
   .skills,
   .about {
