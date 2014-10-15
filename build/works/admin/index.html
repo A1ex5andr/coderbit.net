@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html ng-app="adminModule">
+  <head>
+    <meta charset="UTF-8">
+    <title>Coderbit Made</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Alexander Yushchak | Coderbit">
+    <meta name="description" content="Test work for gTeam">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <link href="css/main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+       <link href="css/ie8.css" rel="stylesheet">
+    <![endif]-->
+  </head>
+  <body>
+    <!-- header of the page START-->
+    <header class="top">
+      <div class="container"><a href="#" class="top-logo">Admin Panel</a></div>
+    </header>
+    <!-- header of the page END-->
+    <!-- MAIN section of the page START-->
+    <section class="main">
+      <div class="container">
+        <h1>Project Details</h1>
+      </div>
+    </section>
+    <!-- MAIN section of the page END-->
+    <!-- DETAILS section of the page END-->
+    <div ng-controller="adminController" class="container details">
+      <div class="titles">
+        <div class="titles-list">
+          <h2>Changelist / Build</h2>
+        </div>
+        <div class="titles-owner">
+          <h2>Owner</h2>
+        </div>
+        <div class="titles-start">
+          <h2>Time Started</h2>
+        </div>
+        <div class="titles-state">
+          <h2>State</h2>
+        </div>
+        <div class="titles-metrics">
+          <h2>Metrics</h2>
+        </div>
+        <div class="titles-build">
+          <h2>Build</h2>
+        </div>
+        <div class="titles-uTest">
+          <h2>Unit Test</h2>
+        </div>
+        <div class="titles-fTest">
+          <h2>Functional Test</h2>
+        </div>
+      </div>
+      <div id="{{ bl1235.ident }}" class="block {{ bl1235.type }}">
+        <div class="blockWrapper">
+          <div class="block-list"><span class="ico"></span><span class="pc-id">{{ bl1235.listName }}</span></div>
+          <div class="block-owner"><span>{{ bl1235.owner }}</span></div>
+          <div class="block-start"><span>{{ bl1235.start }}</span></div>
+          <div class="block-state"><span> {{ bl1235.state }}</span></div>
+          <div class="block-metrics">
+            <div class="indicator">
+              <div class="indicator-state"></div>
+            </div>
+          </div>
+          <div class="block-build">
+            <div class="indicator">
+              <div class="indicator-state"></div>
+            </div>
+          </div>
+          <div class="block-uTest">
+            <div class="indicator">
+              <div class="indicator-state"></div>
+            </div>
+          </div>
+          <div class="block-fTest">
+            <div class="indicator">
+              <div class="indicator-state"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="{{ bl432462_1.ident }}" class="block firewall {{ bl432462_1.type }}">
+        <div class="blockWrapper">
+          <div class="block-list"><span class="ico"></span><span class="pc-id">{{ bl432462_1.listName }}</span></div>
+          <div class="block-owner"><span>{{ bl432462_1.owner }}</span></div>
+          <div class="block-start"><span>{{ bl432462_1.start }}</span></div>
+          <div class="block-state"><span>{{ bl432462_1.state }}</span></div>
+          <div class="block-metrics">
+            <div class="indicator">
+              <div style="width: {{ bl432462_1.metricsSize }}" class="indicator-state {{ bl432462_1.metrics }}"></div>
+            </div>
+          </div>
+          <div class="block-build">
+            <div class="indicator">
+              <div class="indicator-state"></div>
+            </div>
+          </div>
+          <div class="block-uTest">
+            <div class="indicator">
+              <div class="indicator-state"></div>
+            </div>
+          </div>
+          <div class="block-fTest">
+            <div class="indicator">
+              <div class="indicator-state"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="{{ bl432462_2.ident }}" class="block firewall {{ bl432462_2.type }}">
+        <div class="blockWrapper">
+          <div class="block-list"><span class="ico"></span><span class="pc-id">{{ bl432462_2.listName }}</span></div>
+          <div class="block-owner"><span>{{ bl432462_2.owner }}</span></div>
+          <div class="block-start"><span>{{ bl432462_2.start }}</span></div>
+          <div class="block-state"><span>{{ bl432462_2.state }}</span></div>
+          <div class="block-metrics">
+            <div class="indicator">
+              <div style="width: {{ bl432462_2.metricsSize }}" class="indicator-state {{ bl432462_2.metrics }}"></div>
+            </div>
+          </div>
+          <div class="block-build">
+            <div class="indicator">
+              <div style="width: {{ bl432462_2.buildSize }}" class="indicator-state {{ bl432462_2.build }}"></div>
+            </div>
+          </div>
+          <div class="block-uTest">
+            <div class="indicator">
+              <div style="width: {{ bl432462_2.uTestSize }}" class="indicator-state {{ bl432462_2.uTest }}"></div>
+            </div>
+          </div>
+          <div class="block-fTest">
+            <div class="indicator">
+              <div style="width: {{ bl432462_2.fTestSize }}" class="indicator-state {{ bl432462_2.fTest }}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="data-bl">
+            <div class="data-bl-metrics">
+              <h3>Metrics</h3>
+              <div class="metricsData">
+                <div class="metricsData-test">
+                  <div class="icoArr {{ bl432462_2.data.test }}"></div>
+                  <h4> {{ bl432462_2.data.testVal }}</h4>
+                  <h5>test</h5>
+                </div>
+                <div class="metricsData-maint">
+                  <div class="icoArr {{ bl432462_2.data.maint }}"></div>
+                  <h4> {{ bl432462_2.data.maintVal }}</h4>
+                  <h5>Maintainability</h5>
+                </div>
+                <div class="metricsData-sec">
+                  <div class="icoArr {{ bl432462_2.data.sec }}"></div>
+                  <h4>{{ bl432462_2.data.secVal }}</h4>
+                  <h5>Security</h5>
+                </div>
+                <div class="metricsData-work">
+                  <div class="icoArr {{ bl432462_2.data.work }}"></div>
+                  <h4>{{ bl432462_2.data.workVal }}</h4>
+                  <h5>Workmanship</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-build">
+              <h3>Build</h3>
+              <div class="debugData">
+                <div class="data-debug"><img src="img/pcBig.png" alt="">
+                  <h5>Debug</h5>
+                </div>
+                <div class="data-release"><img src="img/pcBig.png" alt="">
+                  <h5>Release</h5>
+                </div>
+                <div class="data-time">
+                  <h5>{{ bl432462_2.data.debugTime }}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-uTest data-blTest">
+              <h3> Unit Test</h3>
+              <div class="chart">
+                <div id="chart-uTest_1" class="chart-uTest"></div>
+                <div class="title-1">{{ bl432462_2.data.UchartT1 }}</div>
+                <div class="title-2">{{ bl432462_2.data.UchartT2 }}</div>
+                <h4>{{ bl432462_2.data.UchartVal }}</h4>
+                <h5>{{ bl432462_2.data.UchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl432462_2.data.UchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-fTest data-blTest">
+              <h3>Functional Test</h3>
+              <div class="chart">
+                <div id="chart-fTest_1" class="chart-fTest"></div>
+                <div class="title-1">{{ bl432462_2.data.FchartT1 }}</div>
+                <div class="title-2">{{ bl432462_2.data.FchartT2 }}</div>
+                <h4>{{ bl432462_2.data.FchartVal }}</h4>
+                <h5>{{ bl432462_2.data.FchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl432462_2.data.FchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-details {{ bl432462_2.data.detailsClass }}">
+              <h3>Result:</h3>
+              <div class="changeStaus">{{ bl432462_2.data.changeStaus }}</div>
+              <div class="changeNotice">{{ bl432462_2.data.changeNotice }}</div>
+              <div class="btn">{{ bl432462_2.data.btn }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="{{ bl1234.ident }}" class="block {{ bl1234.type }}">
+        <div class="blockWrapper">
+          <div class="block-list"><span class="ico"></span><span class="pc-id">{{ bl1234.listName }}</span></div>
+          <div class="block-owner"><span>{{ bl1234.owner }}</span></div>
+          <div class="block-start"><span>{{ bl1234.start }}</span></div>
+          <div class="block-state"><span>{{ bl1234.state }}</span></div>
+          <div class="block-metrics">
+            <div class="indicator">
+              <div style="width: {{ bl1234.metricsSize }}" class="indicator-state {{ bl1234.metrics }}"></div>
+            </div>
+          </div>
+          <div class="block-build">
+            <div class="indicator">
+              <div style="width: {{ bl1234.buildSize }}" class="indicator-state {{ bl1234.build }}"></div>
+            </div>
+          </div>
+          <div class="block-uTest">
+            <div class="indicator">
+              <div style="width: {{ bl1234.uTestSize }}" class="indicator-state {{ bl1234.uTest }}"></div>
+            </div>
+          </div>
+          <div class="block-fTest">
+            <div class="indicator">
+              <div style="width: {{ bl1234.fTestSize }}" class="indicator-state {{ bl1234.fTest }}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="data-bl">
+            <div class="data-bl-metrics">
+              <h3>Metrics</h3>
+              <div class="metricsData">
+                <div class="metricsData-test">
+                  <div class="icoArr {{ bl1234.data.test }}"></div>
+                  <h4> {{ bl1234.data.testVal }}</h4>
+                  <h5>test</h5>
+                </div>
+                <div class="metricsData-maint">
+                  <div class="icoArr {{ bl1234.data.maint }}"></div>
+                  <h4> {{ bl1234.data.maintVal }}</h4>
+                  <h5>Maintainability</h5>
+                </div>
+                <div class="metricsData-sec">
+                  <div class="icoArr {{ bl1234.data.sec }}"></div>
+                  <h4>{{ bl1234.data.secVal }}</h4>
+                  <h5>Security</h5>
+                </div>
+                <div class="metricsData-work">
+                  <div class="icoArr {{ bl1234.data.work }}"></div>
+                  <h4>{{ bl1234.data.workVal }}</h4>
+                  <h5>Workmanship</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-build">
+              <h3>Build</h3>
+              <div class="debugData">
+                <div class="data-debug"><img src="img/pcBig.png" alt="">
+                  <h5>Debug</h5>
+                </div>
+                <div class="data-release"><img src="img/pcBig.png" alt="">
+                  <h5>Release</h5>
+                </div>
+                <div class="data-time">
+                  <h5>{{ bl1234.data.debugTime }}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-uTest data-blTest">
+              <h3> Unit Test</h3>
+              <div class="chart">
+                <div id="chart-uTest_2" class="chart-uTest"></div>
+                <div class="title-1">{{ bl1234.data.UchartT1 }}</div>
+                <div class="title-2">{{ bl1234.data.UchartT2 }}</div>
+                <h4>{{ bl1234.data.UchartVal }}</h4>
+                <h5>{{ bl1234.data.UchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl1234.data.UchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-fTest data-blTest">
+              <h3>Functional Test</h3>
+              <div class="chart">
+                <div id="chart-fTest_2" class="chart-fTest"></div>
+                <div class="title-1">{{ bl1234.data.FchartT1 }}</div>
+                <div class="title-2">{{ bl1234.data.FchartT2 }}</div>
+                <h4>{{ bl1234.data.FchartVal }}</h4>
+                <h5>{{ bl1234.data.FchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl1234.data.FchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-details {{ bl1234.data.detailsClass }}">
+              <h3>Result:</h3>
+              <div class="changeStaus">{{ bl1234.data.changeStaus }}</div>
+              <div class="changeNotice">{{ bl1234.data.changeNotice }}</div>
+              <div class="btn">{{ bl1234.data.btn }}</div>
+              <div class="deployment">
+                <select>
+                  <option>{{ bl1234.deployment.opt1 }}</option>
+                  <option>{{ bl1234.deployment.opt2 }}</option>
+                  <option>{{ bl1234.deployment.opt3 }}</option>
+                  <option>{{ bl1234.deployment.opt4 }}</option>
+                  <option>{{ bl1234.deployment.opt5 }}</option>
+                  <option>{{ bl1234.deployment.opt6 }}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="{{ bl432460.ident }}" class="block firewall {{ bl432460.type }}">
+        <div class="blockWrapper">
+          <div class="block-list"><span class="ico"></span><span class="pc-id">{{ bl432460.listName }}</span></div>
+          <div class="block-owner"><span>{{ bl432460.owner }}</span></div>
+          <div class="block-start"><span>{{ bl432460.start }}</span></div>
+          <div class="block-state"><span>{{ bl432460.state }}</span></div>
+          <div class="block-metrics">
+            <div class="indicator">
+              <div style="width: {{ bl432460.metricsSize }}" class="indicator-state {{ bl432460.metrics }}"></div>
+            </div>
+          </div>
+          <div class="block-build">
+            <div class="indicator">
+              <div style="width: {{ bl432460.buildSize }}" class="indicator-state {{ bl432460.build }}"></div>
+            </div>
+          </div>
+          <div class="block-uTest">
+            <div class="indicator">
+              <div style="width: {{ bl432460.uTestSize }}" class="indicator-state {{ bl432460.uTest }}"></div>
+            </div>
+          </div>
+          <div class="block-fTest">
+            <div class="indicator">
+              <div style="width: {{ bl432460.fTestSize }}" class="indicator-state {{ bl432460.fTest }}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="data-bl">
+            <div class="data-bl-metrics">
+              <h3>Metrics</h3>
+              <div class="metricsData">
+                <div class="metricsData-test">
+                  <div class="icoArr {{ bl432460.data.test }}"></div>
+                  <h4> {{ bl432460.data.testVal }}</h4>
+                  <h5>test</h5>
+                </div>
+                <div class="metricsData-maint">
+                  <div class="icoArr {{ bl432460.data.maint }}"></div>
+                  <h4> {{ bl432460.data.maintVal }}</h4>
+                  <h5>Maintainability</h5>
+                </div>
+                <div class="metricsData-sec">
+                  <div class="icoArr {{ bl432460.data.sec }}"></div>
+                  <h4>{{ bl432460.data.secVal }}</h4>
+                  <h5>Security</h5>
+                </div>
+                <div class="metricsData-work">
+                  <div class="icoArr {{ bl432460.data.work }}"></div>
+                  <h4>{{ bl432460.data.workVal }}</h4>
+                  <h5>Workmanship</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-build">
+              <h3>Build</h3>
+              <div class="debugData">
+                <div class="data-debug"><img src="img/pcBig.png" alt="">
+                  <h5>Debug</h5>
+                </div>
+                <div class="data-release"><img src="img/pcBig.png" alt="">
+                  <h5>Release</h5>
+                </div>
+                <div class="data-time">
+                  <h5>{{ bl432460.data.debugTime }}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-uTest data-blTest">
+              <h3> Unit Test</h3>
+              <div class="chart">
+                <div id="chart-uTest_4" class="chart-uTest"></div>
+                <div class="title-1">{{ bl432460.data.UchartT1 }}</div>
+                <div class="title-2">{{ bl432460.data.UchartT2 }}</div>
+                <h4>{{ bl432460.data.UchartVal }}</h4>
+                <h5>{{ bl432460.data.UchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl432460.data.UchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-fTest data-blTest">
+              <h3>Functional Test</h3>
+              <div class="chart">
+                <div id="chart-fTest_4" class="chart-fTest"></div>
+                <div class="title-1">{{ bl432460.data.FchartT1 }}</div>
+                <div class="title-2">{{ bl432460.data.FchartT2 }}</div>
+                <h4>{{ bl432460.data.FchartVal }}</h4>
+                <h5>{{ bl432460.data.FchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl432460.data.FchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-details {{ bl432460.data.detailsClass }}">
+              <h3>Result:</h3>
+              <div class="changeStaus">{{ bl432460.data.changeStaus }}</div>
+              <div class="changeNotice">{{ bl432460.data.changeNotice }}</div>
+              <div class="btn">{{ bl432460.data.btn }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="{{ bl432459.ident }}" class="block firewall {{ bl432459.type }}">
+        <div class="blockWrapper">
+          <div class="block-list"><span class="ico"></span><span class="pc-id">{{ bl432459.listName }}</span></div>
+          <div class="block-owner"><span>{{ bl432459.owner }}</span></div>
+          <div class="block-start"><span>{{ bl432459.start }}</span></div>
+          <div class="block-state"><span>{{ bl432459.state }}</span></div>
+          <div class="block-metrics">
+            <div class="indicator">
+              <div style="width: {{ bl432459.metricsSize }}" class="indicator-state {{ bl432459.metrics }}"></div>
+            </div>
+          </div>
+          <div class="block-build">
+            <div class="indicator">
+              <div style="width: {{ bl432459.buildSize }}" class="indicator-state {{ bl432459.build }}"></div>
+            </div>
+          </div>
+          <div class="block-uTest">
+            <div class="indicator">
+              <div style="width: {{ bl432459.uTestSize }}" class="indicator-state {{ bl432459.uTest }}"></div>
+            </div>
+          </div>
+          <div class="block-fTest">
+            <div class="indicator">
+              <div style="width: {{ bl432459.fTestSize }}" class="indicator-state {{ bl432459.fTest }}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="data-bl">
+            <div class="data-bl-metrics">
+              <h3>Metrics</h3>
+              <div class="metricsData">
+                <div class="metricsData-test">
+                  <div class="icoArr {{ bl432459.data.test }}"></div>
+                  <h4> {{ bl432459.data.testVal }}</h4>
+                  <h5>test</h5>
+                </div>
+                <div class="metricsData-maint">
+                  <div class="icoArr {{ bl432459.data.maint }}"></div>
+                  <h4> {{ bl432459.data.maintVal }}</h4>
+                  <h5>Maintainability</h5>
+                </div>
+                <div class="metricsData-sec">
+                  <div class="icoArr {{ bl432459.data.sec }}"></div>
+                  <h4>{{ bl432459.data.secVal }}</h4>
+                  <h5>Security</h5>
+                </div>
+                <div class="metricsData-work">
+                  <div class="icoArr {{ bl432459.data.work }}"></div>
+                  <h4>{{ bl432459.data.workVal }}</h4>
+                  <h5>Workmanship</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-build">
+              <h3>Build</h3>
+              <div class="debugData">
+                <div class="data-debug"><img src="img/pcBig.png" alt="">
+                  <h5>Debug</h5>
+                </div>
+                <div class="data-release"><img src="img/pcBig.png" alt="">
+                  <h5>Release</h5>
+                </div>
+                <div class="data-time">
+                  <h5>{{ bl432459.data.debugTime }}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-uTest data-blTest">
+              <h3> Unit Test</h3>
+              <div class="chart">
+                <div id="chart-uTest_3" class="chart-uTest"></div>
+                <div class="title-1">{{ bl432459.data.UchartT1 }}</div>
+                <div class="title-2">{{ bl432459.data.UchartT2 }}</div>
+                <h4>{{ bl432459.data.UchartVal }}</h4>
+                <h5>{{ bl432459.data.UchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl432459.data.UchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-fTest data-blTest">
+              <h3>Functional Test</h3>
+              <div class="chart">
+                <div id="chart-fTest_3" class="chart-fTest"></div>
+                <div class="title-1">{{ bl432459.data.FchartT1 }}</div>
+                <div class="title-2">{{ bl432459.data.FchartT2 }}</div>
+                <h4>{{ bl432459.data.FchartVal }}</h4>
+                <h5>{{ bl432459.data.FchartInfo }}</h5>
+              </div>
+              <div class="codeCover">
+                <div class="codeCover-amount">{{ bl432459.data.FchartCover }}</div>
+                <h6>code covered</h6>
+              </div>
+            </div>
+          </div>
+          <div class="data-bl">
+            <div class="data-bl-details {{ bl432459.data.detailsClass }}">
+              <h3>Result:</h3>
+              <div class="changeStaus">{{ bl432459.data.changeStaus }}</div>
+              <div class="changeNotice">{{ bl432459.data.changeNotice }}</div>
+              <div class="btn">{{ bl432459.data.btn }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DETAILS section of the page END-->
+    <!-- footer of the page START-->
+    <footer></footer>
+    <!-- footer of the page END-->
+    <!-- Vendors-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jseasycharts.min.js"></script>
+    <!-- app libs-->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    <!-- Setups + jQuery DOM contorl-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

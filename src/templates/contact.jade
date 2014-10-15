@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+        meta(name='author' content='Coderbit')
+        meta(name="description" content="Coderbit - front-end developer.")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title Coderbit - send message
+        link(href='css/main.css', rel='stylesheet')
+    body
+        .enterAnimation
+            .wrapper
+                include layout/header.jade
+                .container
+                    form.contactMe#checkForm(action="send.php", method="post", onkeypress="return event.keyCode != 13;")
+                        .input-name
+                            label(for="name") Your Name
+                            input.reqInput(type="text", name="name", placeholder="", autofocus="")
+                        .input-mail
+                            label(for="mail") E-mail
+                            input.reqInput(type="text", name="mail", placeholder="")
+                        .input-text
+                            label(for="message") Message
+                            textarea.reqInput(name="message", type="text")
+                        button.btn(type="submit") SEND
+                .push
+            include layout/footer.jade
+        script(src="http://coderbit.net/js/jquery.min.js")
+        //script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+        //<script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>
+        script(src='http://coderbit.net/js/main.js')

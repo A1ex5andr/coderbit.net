@@ -51,6 +51,25 @@ $(document).ready(function(data) {
     });
     function newpage() { window.location = newLocation;}
 
+    //portfolio showcase initialization
+    (function() {
+        $('.portfolio-link').click(function (e) {
+            var link = $(this).attr("href");
+                link = link.substr(1).concat("Show");
+            console.log(link);
+            $('.'+link).addClass('activeShow');
+            $('.showPopUp').fadeIn(300);
+            $('body, html').css('overflow', 'hidden');
+            e.preventDefault();
+        });
+        $('.closeShow').on('click', function () {
+            $('.showPopUp').fadeOut(500, function () {
+                $('.showPopUp').find('.activeShow').removeClass('activeShow');
+            });
+            $('body, html').css('overflow-y', 'visible');
+        });
+    }());
+
     // DEBUG / / / / / / / / / / / / / / / / / / / / / /
     // ORIENTATION DETECTION
     //$(window).on("orientationchange",function(){
