@@ -1,0 +1,25 @@
+.chart{
+    overflow: hidden!important;
+}
+.chart-uTest,
+.chart-fTest {
+    height: 100px!important;
+    width: 100px!important;
+}
+.chart-uTest img{
+    margin-left: -24px;
+    margin-top: -24px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865476, M21=0.7071067811865476, M22=0.7071067811865474, SizingMethod='auto expand')";
+}
+.chart-fTest {
+    margin-left: -11px;
+    margin-top: -11px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.17364817766693033, M12=-0.984807753012208, M21=0.984807753012208, M22=-0.17364817766693033, SizingMethod='auto expand')";
+}
+.data-blTest h4 {
+    letter-spacing: 0;
+}
+
+.deployment select{
+    max-width: 120px;
+}

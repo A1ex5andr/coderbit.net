@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Coderbit Made</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Alexander Yushchak aka Coderbit">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/main.css" rel="stylesheet"><!--[if lt IE 9]>
+     <script type="text/javascript">window.location = "//outdatedbrowser.com/en";</script>
+    <![endif]-->
+    <script>
+      function currentYPosition() {
+          if (self.pageYOffset)
+               return self.pageYOffset;
+          if (document.documentElement && document.documentElement.scrollTop)
+              return document.documentElement.scrollTop;
+          if (document.body.scrollTop)
+               return document.body.scrollTop;
+          return 0;
+      }
+      function elmYPosition(eID) {
+          var elm  = document.getElementById(eID);
+          var y    = elm.offsetTop;
+          var node = elm;
+          while (node.offsetParent && node.offsetParent != document.body) {
+              node = node.offsetParent;
+              y   += node.offsetTop;
+          } return y;
+      }
+      function smoothScroll(eID) {
+          var startY   = currentYPosition();
+          var stopY    = elmYPosition(eID);
+          var distance = stopY > startY ? stopY - startY : startY - stopY;
+          if (distance < 100) {
+              scrollTo(0, stopY); return;
+          }
+          var speed = Math.round(distance / 100);
+          if (speed >= 20) speed = 20;
+          var step  = Math.round(distance / 25);
+          var leapY = stopY > startY ? startY + step : startY - step;
+          var timer = 0;
+          if (stopY > startY) {
+              for ( var i=startY; i<stopY; i+=step ) {
+                  setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                  leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+              } return;
+          }
+          for ( var i=startY; i>stopY; i-=step ) {
+              setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+              leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- header of the page START-->
+    <header class="top">
+      <div class="container"><a href="index.html" class="top-logo"><img src="img/logo.png" alt="main logotype"> Forward</a>
+        <nav id="navigation" class="nav-collapse">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#news" onclick="smoothScroll('news'); return false">News</a></li>
+            <li><a href="#show" onclick="smoothScroll('show'); return false">Show</a></li>
+            <li><a href="#gallery" onclick="smoothScroll('gallery'); return false">Gallery</a></li>
+            <li><a href="#about" onclick="smoothScroll('about'); return false">About</a></li>
+            <li><a href="#contact" onclick="smoothScroll('contact'); return false">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header of the page END-->
+    <div id="parallax1">
+      <!-- ADV section of the page START-->
+      <div class="adv">
+        <!--.advLayerBg-->
+        <div class="container">
+          <h1>Modern Art <br> & <br> Geometric Design</h1>
+          <h2>SLICK style, CLEAN layout <br> and FAST code</h2>
+          <div id="mainVideo">
+            <video muted = "muted" autoplay = "autoplay">
+                <source src="video/vid.mp4" type="video/mp4">
+                <source src="video/vid.ogv" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            
+            
+          </div>
+        </div>
+      </div>
+      <!-- ADV section of the page END-->
+      <!-- PLAN section of the page START-->
+      <div class="plan">
+        <div class="container">
+          <h1>Choose Your Option</h1>
+          <div class="planBlock"><a href="#" class="planLink">
+              <div class="planBlock-title pb-title_1">
+                <div class="tria tria_1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve"><polygon fill="#19A1DA" points="13.759,3.729 75.294,39.62 13.759,75.509 "/></svg></div>
+              </div>
+              <div class="planLink-desc">
+                <h2>Simple</h2>
+                <h3>Raw Theme</h3>
+              </div>
+              <div class="planLink-go">CLICK HERE</div></a></div>
+          <div class="planBlock"><a href="#" class="planLink">
+              <div class="planBlock-title pb-title_2">
+                <div class="tria tria_1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve"><polygon fill="#69A7DA" points="13.759,3.729 75.294,39.62 13.759,75.509 "/></svg></div>
+                <div class="tria tria_2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve"><polygon fill="#19A1DA" points="13.759,3.729 75.294,39.62 13.759,75.509 "/></svg></div>
+              </div>
+              <div class="planLink-desc">
+                <h2>Advance</h2>
+                <h3>Edited Theme</h3>
+              </div>
+              <div class="planLink-go">CLICK HERE</div></a></div>
+          <div class="planBlock"><a href="#" class="planLink">
+              <div class="planBlock-title pb-title_3">
+                <div class="tria tria_1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve"><polygon fill="#69A7DA" points="13.759,3.729 75.294,39.62 13.759,75.509 "/></svg></div>
+                <div class="tria tria_2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve"><polygon fill="#19A1DA" points="13.759,3.729 75.294,39.62 13.759,75.509 "/></svg></div>
+                <div class="tria tria_3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_3" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve"><polygon fill="#0628A5" points="13.759,3.729 75.294,39.62 13.759,75.509 "/></svg></div>
+              </div>
+              <div class="planLink-desc">
+                <h2>Unique</h2>
+                <h3>Extended Theme</h3>
+              </div>
+              <div class="planLink-go">CLICK HERE</div></a></div>
+        </div>
+      </div>
+      <!-- PLAN section of the page END-->
+    </div>
+    <!-- NEWS section of the page START-->
+    <div id="news" class="news">
+      <div class="container">
+        <h1 id="triggerAnimateWhite">Say it loud</h1>
+        <h2>Success is where preparation and opportunity meet.</h2>
+        <div class="news-bl">
+          <div class="news-bl-item news-1">
+            <div class="news-ico"></div>
+            <h3>Machines Must Work</h3>
+            <p>Use all computers power to do the work for you. Explore latest technologies and cloud possibilities to make work process easier and faster. Team should have data access 24/7 to be able to deliver results asap.</p>
+          </div>
+        </div>
+        <div class="news-bl">
+          <div class="news-bl-item news-2">
+            <div class="news-ico"></div>
+            <h3>Clean your plan</h3>
+            <p>Define strict goals, only ones that will give you the result you want. Dont waste a time on a tasks which consume a lot of power and won't bring you closer to the aim.</p>
+          </div>
+        </div>
+        <div class="news-bl">
+          <div class="news-bl-item news-3">
+            <div class="news-ico"></div>
+            <h3>create  comunity</h3>
+            <p>In the era of technologies - business is growing if it has its own community and happy clients. Improve your products all the time, listen for feedbacks and stay tuned.</p>
+          </div>
+        </div>
+        <div class="news-bl">
+          <div class="news-bl-item news-4">
+            <div class="news-ico"></div>
+            <h3>develop and improve</h3>
+            <p>Clean and fast code, logically structured content and continuous development and improvements - main aspects of future proof product. It's better to be prepared for new changes today, than waste time tomorrow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NEWS section of the page END-->
+    <!-- SHOW section of the page START-->
+    <div id="show" class="show">
+      <div class="container">
+        <h1>show yourself</h1>
+        <div class="video"><iframe src="//player.vimeo.com/video/75188030" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="smallAd">
+          <h2>World in between of imagination and reality</h2>
+          <ul>
+            <li><span></span> Design is a thing to feel</li>
+            <li><span></span> Created completely from scratch</li>
+            <li><span></span> Works in all latest browsers</li>
+            <li><span></span> IE8 support and functionality</li>
+            <li><span></span> Takes less than a minute to like it</li>
+          </ul><a href="#" class="btn">Get your theme now!</a>
+        </div>
+      </div>
+    </div>
+    <!-- SHOW section of the page END-->
+    <!-- Gallery section of the page START-->
+    <div id="gallery" class="gallery">
+      <div class="container">
+        <h1>Masterpiece</h1>
+        <h2>1/125 can tell your more<br> than a few hours story</h2>
+        <div class="gallery-bl">
+          <div class="galItem">
+            <div class="galItem-show"></div>
+            <div class="galItem-image"><img src="img/gallery/thumb/02.jpg" alt=""></div>
+            <h4 class="galItem-title">Ride</h4>
+          </div>
+        </div>
+        <div class="gallery-bl">
+          <div class="galItem">
+            <div class="galItem-show"></div>
+            <div class="galItem-image"><img src="img/gallery/thumb/01.jpg" alt=""></div>
+            <h4 class="galItem-title">Landscape</h4>
+          </div>
+        </div>
+        <div class="gallery-bl">
+          <div class="galItem">
+            <div class="galItem-show"></div>
+            <div class="galItem-image"><img src="img/gallery/thumb/03.jpg" alt=""></div>
+            <h4 class="galItem-title">Models</h4>
+          </div>
+        </div>
+        <div class="gallery-bl">
+          <div class="galItem">
+            <div class="galItem-show"></div>
+            <div class="galItem-image"><img src="img/gallery/thumb/04.jpg" alt=""></div>
+            <h4 class="galItem-title">Nature</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery section of the page END-->
+    
+    
+    <!-- About section of the page START-->
+    <div id="about" class="about">
+      <div class="container">
+        <h1><b>Good result</b> is our visitcard</h1>
+        <h2>One team, One idea, One vision</h2>
+        <div class="about-bl"><img src="img/01.jpg" alt="">
+          <h3>CEO</h3>
+          <h4>Jane Smith</h4>
+          <p>"If you don't know how to do it yet, that's your chance to learn something new."</p>
+        </div>
+        <div class="about-bl"><img src="img/02.jpg" alt="">
+          <h3>CCO</h3>
+          <h4>Ann Lee</h4>
+          <p>"Good product is a product you would love to have for yourself."</p>
+        </div>
+        <div class="about-bl"><img src="img/03.jpg" alt="">
+          <h3>CTO</h3>
+          <h4>Jordan Clay</h4>
+          <p>"If it works good, you can always make it better and faster."</p>
+        </div>
+        <div class="about-bl"><img src="img/04.jpg" alt="">
+          <h3>CHRO</h3>
+          <h4>Samanta Ray</h4>
+          <p>"We value people who respect others teammates and work with inspiration."</p>
+        </div>
+      </div>
+    </div>
+    <!-- About section of the page END-->
+    <!-- Contact section of the page START-->
+    <div id="contact" class="contact">
+      <div class="container">
+        <h1>Write us and we get back to you asap</h1>
+        <form id="checkForm" action="#" method="post" class="contactUs">
+          <div class="input-name">
+            <label for="formName">Your Name</label>
+            <input id="formName" type="text" name="name" placeholder="" class="reqInput">
+          </div>
+          <div class="input-mail">
+            <label for="formMail">E-mail</label>
+            <input id="formMail" type="text" name="mail" placeholder="" class="reqInput">
+          </div>
+          <div class="input-text">
+            <label for="formMessage">Message</label>
+            <textarea id="formMessage" name="message" class="reqInput"></textarea>
+          </div>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+    <!-- Contact section of the page END-->
+    <!-- footer of the page START-->
+    <footer>
+      <div class="container">
+        <div class="social"><a href="#">
+            <div class="face"></div></a><a href="#">
+            <div class="pin"></div></a><a href="#">
+            <div class="twit"></div></a><a href="#">
+            <div class="vim"></div></a><a href="#">
+            <div class="sky"></div></a></div>
+        <nav class="footNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#news" onclick="smoothScroll('news'); return false">News</a></li>
+            <li><a href="#show" onclick="smoothScroll('show'); return false">Show</a></li>
+            <li><a href="#gallery" onclick="smoothScroll('gallery'); return false">Gallery</a></li>
+            <li><a href="#about" onclick="smoothScroll('about'); return false">About</a></li>
+            <li><a href="#contact" onclick="smoothScroll('contact'); return false">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <div class="copyRight">© Copyright 2014 Coderbit | All Rights Reserved</div>
+    <!-- footer of the page END-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.scrollmagic.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

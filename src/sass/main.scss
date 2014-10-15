@@ -95,6 +95,14 @@ textarea {
   z-index: 5555;
 }
 
+/* portfolio show work */
+.imagePreLoader{
+  img{
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 /* *** INDEX PAGE *** */
 
 // entering page animation
@@ -348,7 +356,7 @@ textarea {
   height: auto;
   margin: 0 auto;
   top: 0;
-  background: #FCFCFC;
+  background: #fff;
 //  background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
   z-index: 9999;
   overflow: hidden;

@@ -1,5 +1,5 @@
 doctype html
-html
+html(data-ng-app="portfolio")
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
@@ -73,13 +73,17 @@ html
                                     img.portfolio-thumb(src="img/portfolio/thumbs/uptrade.jpg", alt="frontend web development example uptrade")
                                     span.portfolio-title Uptrade
 
-                        .row    
+                        .row
 
-            .showPopUp
+            .showPopUp(data-ng-controller="imageLoadCtrl")
                 div.ethnocaseShow.workShow
                     div.closeShow X
-                    div.leftShow
-                        img.workShow-image(src="img/portfolio/ethnocase.jpg", alt="frontend web development example ethnocase")
+                    div.leftShow(data-ng-switch="isLoading")
+                        div.imagePreLoader(data-ng-switch-when="true")
+                            img(src="img/imagePreloader.gif")
+                        div.imageLoaded(data-ng-switch-when="fasle" data-ng-switch="isSuccessful")
+                            span(data-ng-switch-when="true")
+                                img.workShow-image(src="{{imageLocations.ethnocase}}", alt="frontend web development example ethnocase")
                     div.rightShow
                         h2.workShow-title Internet Shop For Ethnocase Company
                         p.workShow-text This is a new version of the original site, rebuilt and redesigned completely from a scratch. Frontend made by me with html5 / css3 / js, automated with compass / susy and scss. Backend coded by Alexander Butyuhin with php / mysql and medoo framework. Shop is multilingual and multicurrency with custom made cms.
@@ -180,5 +184,37 @@ html
         //script(src="https://code.jquery.com/jquery-2.1.1.min.js")
         //<script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>
         //script(src='http://coderbit.net/js/main.js')
+        script(src="js/angular.min.js")
         script(src='js/main.js')
+        script.
+            // ----- creating application module
+            var app = angular.module("portfolio", []);
 
+            // ----- root application control
+            app.controller('imageLoadCtrl', function($scope, preloader) {
+                // tracking the state of what I show
+                $scope.isLoading = true;
+                $scope.isSuccessful = false;
+                // image locations
+
+                // preload images and update display
+                $scope.imageLocations =
+                {"ethnocase" : "img/portfolio/ethnocase.jpg"}
+
+                // preload images and update s
+                preloader.preloadImages($scope.imageLocations).then(
+                    function handleResolve(imageLocations) {
+                      //load was successful
+                      $scope.isLoading = false;
+                      $scope.isSuccessful = true;
+                      console.info('Preload Successful');
+                    },
+                    function handleReject( imageLocation) {
+                        // Loading failed on at least one image.
+                        $scope.isLoading = false;
+                        $scope.isSuccessful = false;
+                        console.error( "Image Failed", imageLocation );
+                        console.info( "Preload Failure" );
+                    }
+                )
+            });

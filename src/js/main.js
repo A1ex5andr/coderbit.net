@@ -59,14 +59,14 @@ $(document).ready(function(data) {
             console.log(link);
             $('.'+link).addClass('activeShow');
             $('.showPopUp').fadeIn(300);
-            $('body, html').css('overflow', 'hidden');
+//            $('body, html').css('overflow', 'hidden');
             e.preventDefault();
         });
         $('.closeShow').on('click', function () {
             $('.showPopUp').fadeOut(500, function () {
                 $('.showPopUp').find('.activeShow').removeClass('activeShow');
             });
-            $('body, html').css('overflow-y', 'visible');
+//            $('body, html').css('overflow-y', 'visible');
         });
     }());
 
