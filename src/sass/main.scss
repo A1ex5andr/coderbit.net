@@ -97,10 +97,10 @@ textarea {
 
 /* portfolio show work */
 .imagePreLoader{
-  img{
+
     margin: 0 auto;
     display: block;
-  }
+
 }
 
 /* *** INDEX PAGE *** */
@@ -367,6 +367,7 @@ textarea {
   position: relative;
   &-image{
     display: none;
+    width: 220px;
   }
   &-text{
     text-align: justify;
@@ -602,7 +603,6 @@ footer{
     margin-top: 0;
   }
     &-image{
-      display: block;
       width: 100%;
       border: 1px solid darkgray;
     }
@@ -665,7 +665,6 @@ footer{
       font-size: 26px;
     }
     &-image{
-      display: block;
       width: 100%;
       border: 1px solid darkgray;
     }

@@ -54,12 +54,17 @@ $(document).ready(function(data) {
     //portfolio showcase initialization
     (function() {
         $('.portfolio-link').click(function (e) {
-            var link = $(this).attr("href");
-                link = link.substr(1).concat("Show");
+            var id = $(this).attr("href").substr(1);
+                link = id.concat("Show");
             console.log(link);
+            console.log(this);
             $('.'+link).addClass('activeShow');
             $('.showPopUp').fadeIn(300);
 //            $('body, html').css('overflow', 'hidden');
+            $('.'+link).find('.workShow-image').attr('src', 'img/portfolio/' + id + '.jpg');
+            $('.'+link).find('.imagePreLoader').fadeOut(1000, function () {
+                $('.'+link).find('.workShow-image').slideDown(300);
+            });
             e.preventDefault();
         });
         $('.closeShow').on('click', function () {
@@ -69,6 +74,7 @@ $(document).ready(function(data) {
 //            $('body, html').css('overflow-y', 'visible');
         });
     }());
+
 
     // DEBUG / / / / / / / / / / / / / / / / / / / / / /
     // ORIENTATION DETECTION

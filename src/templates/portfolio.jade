@@ -1,5 +1,5 @@
 doctype html
-html(data-ng-app="portfolio")
+html
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
@@ -26,13 +26,13 @@ html(data-ng-app="portfolio")
                                     span.portfolio-title Ekonomim
                             .portfolio-bl
                                 a.portfolio-link(href="#iqfriends")
-                                    img.portfolio-thumb(src="img/portfolio/thumbs/iq.jpg", alt="frontend web development example iqfriends")
+                                    img.portfolio-thumb(src="img/portfolio/thumbs/iqfriends.jpg", alt="frontend web development example iqfriends")
                                     span.portfolio-title iQFriends
 
                         .row
                             .portfolio-bl
                                 a.portfolio-link(href="#uwc14")
-                                    img.portfolio-thumb(src="img/portfolio/thumbs/uwc.jpg", alt="frontend web development example uwc14")
+                                    img.portfolio-thumb(src="img/portfolio/thumbs/uwc14.jpg", alt="frontend web development example uwc14")
                                     span.portfolio-title UWC
                             .portfolio-bl
                                 a.portfolio-link(href="#qtrade")
@@ -75,15 +75,12 @@ html(data-ng-app="portfolio")
 
                         .row
 
-            .showPopUp(data-ng-controller="imageLoadCtrl")
+            .showPopUp
                 div.ethnocaseShow.workShow
                     div.closeShow X
-                    div.leftShow(data-ng-switch="isLoading")
-                        div.imagePreLoader(data-ng-switch-when="true")
-                            img(src="img/imagePreloader.gif")
-                        div.imageLoaded(data-ng-switch-when="fasle" data-ng-switch="isSuccessful")
-                            span(data-ng-switch-when="true")
-                                img.workShow-image(src="{{imageLocations.ethnocase}}", alt="frontend web development example ethnocase")
+                    div.leftShow
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example ethnocase")
                     div.rightShow
                         h2.workShow-title Internet Shop For Ethnocase Company
                         p.workShow-text This is a new version of the original site, rebuilt and redesigned completely from a scratch. Frontend made by me with html5 / css3 / js, automated with compass / susy and scss. Backend coded by Alexander Butyuhin with php / mysql and medoo framework. Shop is multilingual and multicurrency with custom made cms.
@@ -91,7 +88,8 @@ html(data-ng-app="portfolio")
                 div.ekonomimShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/ekonomim.jpg", alt="frontend web development example ekonomim")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example ekonomim")
                     div.rightShow
                         h2.workShow-title Wordpress Web Site On How To Economize
                         p.workShow-text My tasks were to install the latest wordpress engine and set it up with the theme the client has chosen. Css customizations where made with wordpress child theme. Site is still under content filling and testing.
@@ -99,7 +97,8 @@ html(data-ng-app="portfolio")
                 div.iqfriendsShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/iq.jpg", alt="frontend web development example iqfriends")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example iqfriends")
                     div.rightShow
                         h2.workShow-title Logic Games With Social Integration
                         p.workShow-text I received an invitation to work on IQ friends website in March 2014 and I liked the concept of the project a lot. To make it responsive and to have a possibility to customize it by the team participants on their own later, I was told to use bootstrap library as main html/css constructor. Though the web is still under backend development, the site is already functioning.
@@ -107,7 +106,8 @@ html(data-ng-app="portfolio")
                 div.uwc14Show.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/uwc.jpg", alt="frontend web development example uwc14")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example uwc14")
                     div.rightShow
                         h2.workShow-title Competitive Work for Ukraine web challenge
                         p.workShow-text This is my work to participate in the Ukraine web challenge championship 2014. The main goal was to create a registration form, after which user always sees another index page (if registered). To make this I wrote a JS which creates a cookie to store and identify user. To send a mail to user after registration I used a php script. For animations I've coded js and some css3 transitions. After all I passed to semi-final, in senior category, that was a great pleasure to me.
@@ -115,7 +115,8 @@ html(data-ng-app="portfolio")
                 div.qtradeShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/qtrade.jpg", alt="frontend web development example qtrade")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example qtrade")
                     div.rightShow
                         h2.workShow-title Bearing Trade Market Web Site Rebuild And Redesign
                         p.workShow-text Main page of the site is heavily loaded with big amount of text. That was the reason why few previous redesigns weren't the best way to go, though they were making bigger WOW effect. This version looks much cleaner and is more acceptable form UX/UI point of view, considering that people come to this site not only once but from time to time to post their messages. It's build with bootstrap to let different programmers take part in future development of the project.
@@ -123,7 +124,8 @@ html(data-ng-app="portfolio")
                 div.tvunaShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/tvuna.jpg", alt="frontend web development example tvuna")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example tvuna")
                     div.rightShow
                         h2.workShow-title Web portal for digital agency
                         p.workShow-text My main tasks were to bring into life a bunch of psd pages, responsive and working in ie8. Have to admit, that `rtl` was kinda unusual. On this project I had to use both css and js transitions with html5. Two sliders per page wasn't a hard task. While developing for modern browsers, ie8 was a thing to consider in mind all the time. But with graceful degradation and shiv everything is possible. Though I finished my part of job in Jan of 2014, project is still under backend construction.
@@ -131,7 +133,8 @@ html(data-ng-app="portfolio")
                 div.partyzanShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/partyzan.jpg", alt="frontend web development example partyzan")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example partyzan")
                     div.rightShow
                         h2.workShow-title Web Site For PaRtyzan Studio
                         p.workShow-text This simple website was made as redesign for the PaRtyzan PR company. To build it I used slider with css3 transitions. Design was made by the company itself. Customer wanted to code layout without using of any js libraries, but I'm suggesting to build similar grid layouts with Masonry library. It's fast, neat and easy customizable. Anyway, flat design and square blocks always look nice.
@@ -139,7 +142,8 @@ html(data-ng-app="portfolio")
                 div.healthShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/health.jpg", alt="frontend web development example health")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example health")
                     div.rightShow
                         h2.workShow-title Php Form For Data Sending
                         p.workShow-text I needed to create a special form of different input types, which would be responsive and fast. To send all data via email I used PHP script. No data verifying was asked, but in my works I use JS checks and highlighting, if field is empty, to work it in different browsers.
@@ -147,7 +151,8 @@ html(data-ng-app="portfolio")
                 div.ivantageShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/ivantage.jpg", alt="frontend web development example ivantage")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example ivantage")
                     div.rightShow
                         h2.workShow-title Web Site For Ivantage Company
                         p.workShow-text Web site should have only 2 resolutions but to work in ie8 as well. Site consists of about 20 pages and most of them consist of tables. I'm not a fan of ie and css hacks but this time a had to use them quite a lot. Afterwards, main task was to make it all works as it should in all browsers.
@@ -155,7 +160,8 @@ html(data-ng-app="portfolio")
                 div.adminShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/admin.jpg", alt="frontend web development example admin")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example admin")
                     div.rightShow
                         h2.workShow-title Admin Panel with AngularJS and $http service
                         p.workShow-text My task was to build an administrator panel, with MVC architecture. To achieve this I used AngularJS framework. Main data is saved on a server as JSON and transferred to the client thru $http.get. One of the requirements was IE8 support.
@@ -163,7 +169,8 @@ html(data-ng-app="portfolio")
                 div.prodlinkShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/prodlink.jpg", alt="frontend web development example prodlink")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example prodlink")
                     div.rightShow
                         h2.workShow-title Web Site For Bank Department
                         p.workShow-text One page web application, for which I have to code html / css / js and add a slider. Something that makes the process of work a little bit harder is `rtl`. Though I liked to work on this project because of clean and good psd mockup. Ie8 was also a must ))
@@ -171,7 +178,8 @@ html(data-ng-app="portfolio")
                 div.uptradeShow.workShow
                     div.closeShow X
                     div.leftShow
-                        img.workShow-image(src="img/portfolio/uptrade.jpg", alt="frontend web development example uptrade")
+                        img.imagePreLoader(src="img/imagePreloader.gif", alt="preloader")
+                        img.workShow-image(src="", alt="frontend web development example uptrade")
                     div.rightShow
                         h2.workShow-title Advertising Site With Contact Form
                         p.workShow-text My task was to design and code a simple static web site where company may post it's news, product descriptions and so on. For contact form I used a php script.
@@ -184,37 +192,5 @@ html(data-ng-app="portfolio")
         //script(src="https://code.jquery.com/jquery-2.1.1.min.js")
         //<script>window.jQuery || document.write('<script src="http://coderbit.net/js/jquery.min.js">\x3C/script>')</script>
         //script(src='http://coderbit.net/js/main.js')
-        script(src="js/angular.min.js")
+        //script(src="js/angular.min.js")
         script(src='js/main.js')
-        script.
-            // ----- creating application module
-            var app = angular.module("portfolio", []);
-
-            // ----- root application control
-            app.controller('imageLoadCtrl', function($scope, preloader) {
-                // tracking the state of what I show
-                $scope.isLoading = true;
-                $scope.isSuccessful = false;
-                // image locations
-
-                // preload images and update display
-                $scope.imageLocations =
-                {"ethnocase" : "img/portfolio/ethnocase.jpg"}
-
-                // preload images and update s
-                preloader.preloadImages($scope.imageLocations).then(
-                    function handleResolve(imageLocations) {
-                      //load was successful
-                      $scope.isLoading = false;
-                      $scope.isSuccessful = true;
-                      console.info('Preload Successful');
-                    },
-                    function handleReject( imageLocation) {
-                        // Loading failed on at least one image.
-                        $scope.isLoading = false;
-                        $scope.isSuccessful = false;
-                        console.error( "Image Failed", imageLocation );
-                        console.info( "Preload Failure" );
-                    }
-                )
-            });
